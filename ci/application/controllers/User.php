@@ -4,9 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
      //Autor: Luis Felipe
      //Tempo: 3 horas
      //Entrada: Foi criado o Controller para cuidar da parte de usuário, onde são carregadas as páginas de
-     //cadastro de usuario e login
+     //cadastro de usuario e login, além da função de inserir um novo usuario de acordo com o que foi digitado no form
      
-class Usuario extends CI_Controller {
+class User extends CI_Controller {
 	// Função para abrir a página de cadastro de usuario
 	public function register()
 	{
@@ -37,9 +37,9 @@ class Usuario extends CI_Controller {
         if($usuario->isValido()){
             $this->load->model("insertdao");
             $this->insertdao->insertObject($usuario);
-            redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/usuario/register',true);
+            redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register',true);
         }else{
             $this->load->view("erro");
         }
-	}
+    }
 }

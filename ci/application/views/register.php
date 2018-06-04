@@ -65,7 +65,7 @@
 						</div>
 					</div>						
 					<div class="row justify-content-center">
-						<form class="col-lg-7" method="POST" action="/ci/index.php/usuario/inserir">
+						<form class="col-lg-7" method="POST" action="/ci/index.php/user/inserir">
 						  <div class="form-group">
 						    <input type="text" name="primeironome" class="form-control" placeholder="Nome">
 						  </div>
