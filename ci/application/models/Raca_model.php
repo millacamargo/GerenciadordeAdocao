@@ -8,20 +8,38 @@ class Raca_model extends CI_model{
     }
     
      /**
-	 Descrição: 
+	 Descrição: Traz todas as cidades da especie informada.
 	 Autora: Camila Camargo
-	 Horas: 2 horas
+	 Horas: 
 	 Entrada: 
 	 Saída:
 	 */
     public function getRacasByIdEspecie($id_especie = null){
         return $this->db
-        ->where("ID_ESPECIE", $id_especie)
+        ->where("id_especie", $id_especie)
         ->order_by('raca')
         ->get('Raca');
     }
     
-    
+    /**
+	 Descrição: Monta um select com as raças selecionadas da espécie.
+	 Autora: Camila Camargo
+	 Horas: 
+	 Entrada: 
+	 Saída:
+	 */
+    public function selectRacas($id_especie = null){
+        
+        $racas = $this->getRacasByIdEspecie($id_especie);
+        
+        $options = "<option>Selecione a raça</option>";
+        
+        foreach ($racas -> result() as $raca){
+            $options .= "<option value='{$raca->id}'>$raca->raca</option>".PHP_EOL;
+        }
+        
+        return $options;
+    }
 
     
 }

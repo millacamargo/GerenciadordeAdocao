@@ -86,15 +86,15 @@
 						  </div>
 									<h3 class="col-12 mb-30" for="especie">Espécie</h3>
 									<div class="default-select" id="default-select">
-										<select id="especies" name="especie">
+										<select id="especie" name="especie">
 										    <?php echo $options_especies ?>
 										</select>
 									</div>
                             <div class="single-element-widget mt-30 boxsearch">
-									<h3 class="col-12 mb-30 ">Raça</h3>
+									<h3 class="col-12 mb-30 " for="raca">Raça</h3>
 									<div class="default-select" id="default-select">
-										<select>
-											
+										<select id="raca" name="raca" disabled>
+											<option>Selecione a espécie acima</option>
 										</select>
 									</div>
 								</div>
@@ -174,8 +174,8 @@
 				</div>
 			</footer>
 			<!-- End footer Area -->	
-
-			<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
+			
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>

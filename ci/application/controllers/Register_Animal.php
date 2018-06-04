@@ -6,14 +6,14 @@ class Register_Animal extends CI_Controller {
 	/**
 	 Descrição: Esta função faz a página rodar.
 	 Autora: Camila Camargo
-	 Horas: 10min
+	 Horas: 7 minutos
 	 Entrada: 
 	 Saída:
 	 */
 	public function showRegister()
 	{
-		// essa levou 2 horas
-		$this->load->model('Especie_model');
+		// essa levou  30 minutos
+		
 		$dados = [
 			'options_especies' => $this->Especie_model->selectEspecie()
 		];

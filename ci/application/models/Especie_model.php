@@ -10,7 +10,7 @@ class Especie_model extends CI_model {
     /**
 	 Descrição: Traz todas as especies cadastradas no banco de dados
 	 Autora: Camila Camargo
-	 Horas: 2 horas
+	 Horas: 30 minutos
 	 Entrada: 
 	 Saída:
 	 */
@@ -23,7 +23,7 @@ class Especie_model extends CI_model {
     /**
 	 Descrição: monta um select de options com as especies cadastradas.
 	 Autora: Camila Camargo
-	 Horas: 2 horas
+	 Horas: 30 minutos
 	 Entrada: 
 	 Saída:
 	 */
@@ -31,7 +31,7 @@ class Especie_model extends CI_model {
         $options = "<option value=''>Selecione a Especie</option>";
         $especies = $this->getAll();
         foreach($especies -> result() as $especie){
-            $options .= "<option value='{$especie->id}'>$especie->especie</option>";
+            $options .= "<option value='{$especie->id}'>{$especie->especie}</option>";
         }
         return $options;
     }

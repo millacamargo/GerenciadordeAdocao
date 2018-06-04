@@ -361,5 +361,21 @@ $(document).ready(function() {
     $(document).ready(function() {
         $('#mc_embed_signup').find('form').ajaxChimp();
     });
+    
 
+    $(function(){
+        $('#especie').change(function(){
+            var id_especie = $('#especie').val();
+            $('#raca').attr('disabled', 'disabled');
+            $('#raca').html("<option>Carregando...</option>");
+            $.post('https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/ajax/Raca/getRaca',{
+                id_especie : id_especie
+            }, function(data){
+                $('#raca').html(data);
+                $('#raca').removeAttr('disabled');
+            });
+        });
+    });
 });
+
+    
