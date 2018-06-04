@@ -61,7 +61,7 @@
             <div id="formlogin">
 			<section class="Volunteer-form-area section-gap">
 				<div class="container">
-				    <form class="col-lg-12" method="POST" action="/ci/index.php/welcome/autenticar">
+				    <form class="col-lg-12" method="POST" action="/ci/index.php/usuario/autenticar">
 						  <div class="form-group">
 						  	<div class="col-6 mb-20">
 						  	<h2 style="margin:0 120px 10px 120px;font-size:10px;color:red;"><?= $msgErro ?></h2>

@@ -2,7 +2,7 @@
 
      //Descrição: Metodo com a classe Usuario que será inserido no banco
      //Autor: Luis Felipe
-     //Tempo: 1 hora
+     //Tempo: 50 minutos
      //Entrada: São declaradas todas as variaveis necessarias para se criar um novo usuario e inseri-lo no banco
      //Verifica se são validos todos os campos que forem digitados no form
      //Cria-se um array de usuarios para receber varios usuarios
