@@ -2268,7 +2268,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-right: 30px;
   border: 1px solid transparent;
   color: #fff;
-  display: inline-block;
+  display: flex;
   font-weight: 500;
   position: relative;
   -webkit-transition: all 0.3s ease 0s;
@@ -2276,7 +2276,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
-  position: relative;
+  margin-top: 10px;
+  margin-left: 5%
 }
 
 .primary-btn:focus {
