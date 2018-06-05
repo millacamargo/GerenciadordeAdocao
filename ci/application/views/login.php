@@ -33,8 +33,8 @@
 				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/about">Sobre nós</a></li>
 				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/voluntario/volunteer">Seja um voluntário</a></li>				          
 				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/contato/contact">Contato</a></li>
-                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/usuario/register">Registre-se</a></li>
-                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/usuario/login">Login</a></li>				              
+                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register">Registre-se</a></li>
+                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login">Login</a></li>				              
 				        </ul>
 				      </nav><!-- Fim do menu -->		    		
 			    	</div>
@@ -61,7 +61,7 @@
             <div id="formlogin">
 			<section class="Volunteer-form-area section-gap">
 				<div class="container">
-				    <form class="col-lg-12" method="POST" action="/ci/index.php/usuario/autenticar">
+				    <form class="col-lg-12" method="POST" action="/ci/index.php/user/autenticar">
 						  <div class="form-group">
 						  	<div class="col-6 mb-20">
 						  	<h2 style="margin:0 120px 10px 120px;font-size:10px;color:red;"><?= $msgErro ?></h2>
