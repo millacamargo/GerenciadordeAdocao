@@ -84,21 +84,23 @@
 						    <h3 for="first-name">Nome</h3>
 						    <input type="text" class="form-control" placeholder="Nome (opcional)">
 						  </div>
+						  	<div class="single-element-widget mt-30 boxsearch">
 									<h3 class="col-12 mb-30" for="especie">Espécie</h3>
 									<div class="default-select" id="default-select">
 										<select id="especie" name="especie">
 										    <?php echo $options_especies ?>
 										</select>
 									</div>
+							</div>
                             <div class="single-element-widget mt-30 boxsearch">
 									<h3 class="col-12 mb-30 " for="raca">Raça</h3>
 									<div class="default-select" id="default-select">
-										<select id="raca" name="raca" disabled>
+										<select id="raca" name="raca" >
 											<option>Selecione a espécie acima</option>
 										</select>
 									</div>
 								</div>
-                            
+    
                                <div class="single-element-widget mt-30 boxsearch">
 									<h3 class="col-12 mb-30">Cor</h3>
 									<div class="default-select" id="default-select">

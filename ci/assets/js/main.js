@@ -366,13 +366,12 @@ $(document).ready(function() {
     $(function(){
         $('#especie').change(function(){
             var id_especie = $('#especie').val();
-            $('#raca').attr('disabled', 'disabled');
-            $('#raca').html("<option>Carregando...</option>");
             $.post('https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/ajax/Raca/getRaca',{
                 id_especie : id_especie
             }, function(data){
+                // console.log(data.split(''));
                 $('#raca').html(data);
-                $('#raca').removeAttr('disabled');
+                // $('#raca').removeAttr('disabled');
             });
         });
     });

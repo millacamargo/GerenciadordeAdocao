@@ -35,7 +35,7 @@ class Raca_model extends CI_model{
         $options = "<option>Selecione a raça</option>";
         
         foreach ($racas -> result() as $raca){
-            $options .= "<option value='{$raca->id}'>$raca->raca</option>".PHP_EOL;
+            $options .= "<option value='{$raca->id_raca}'>$raca->raca</option>".PHP_EOL;
         }
         
         return $options;
