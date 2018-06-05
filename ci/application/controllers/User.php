@@ -4,7 +4,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
      //Autor: Luis Felipe
      //Tempo: 7 horas
      //Entrada: Foi criado o Controller para cuidar da parte de usuário, onde são carregadas as páginas de
-     //cadastro de usuario e login, além da função de inserir um novo usuario de acordo com o que foi digitado no form
+     //cadastro de usuario, login e a dashboard do site, além da função de inserir um novo usuario de acordo com o que foi digitado no form
+     //e as funções para autenticar e deslogar
      
 class User extends CI_Controller {
 	// Função para abrir a página de cadastro de usuario
@@ -63,6 +64,17 @@ class User extends CI_Controller {
 		//Função para deslogar-se e encerrar a sessão
         public function logout(){
         $this->session->unset_userdata("primeironome");
-        redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/welcome/index',true);
+        redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index',true);
+    }
+        //Função para abrir a página principal do site se o usuario estiver logado, caso contrario retorna para a página de login
+        //
+	 public function dashboard(){
+        $data["primeironome"] = $this->session->userdata("primeironome");
+        if(isset($data["primeironome"])){
+            $this->load->view("dashboard",$data);
+        }else{
+            $this->session->set_userdata("msgErro","Você precisa estar logado!");
+            redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login',true);
+        }
     }
 }
