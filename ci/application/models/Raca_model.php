@@ -32,10 +32,10 @@ class Raca_model extends CI_model{
         
         $racas = $this->getRacasByIdEspecie($id_especie);
         
-        $options = "<option>Selecione a raça</option>";
+        $options = "<option>Selecione a raça</option>".PHP_EOL;
         
         foreach ($racas -> result() as $raca){
-            $options .= "<option value='{$raca->id_raca}'>$raca->raca</option>".PHP_EOL;
+            $options .= "<option value='{$raca->id_raca}'>{$raca->raca}</option>".PHP_EOL;
         }
         
         return $options;

@@ -1,13 +1,13 @@
-/*--------------------------- Color variations ----------------------*/
-/* Medium Layout: 1280px */
-/* Tablet Layout: 768px */
-/* Mobile Layout: 320px */
-/* Wide Mobile Layout: 480px */
-/* =================================== */
-/*  Basic Style 
-/* =================================== */
+--------------------------- Color variations ----------------------
+ Medium Layout: 1280px 
+ Tablet Layout: 768px 
+ Mobile Layout: 320px 
+ Wide Mobile Layout: 480px 
+ =================================== 
+  Basic Style 
+ =================================== 
 ::-moz-selection {
-  /* Code for Firefox */
+   Code for Firefox 
   background-color: #fab700;
   color: #fff;
 }
@@ -18,33 +18,33 @@
 }
 
 ::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
+   WebKit, Blink, Edge 
   color: #777777;
   font-weight: 300;
 }
 
 :-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
+   Mozilla Firefox 4 to 18 
   color: #777777;
   opacity: 1;
   font-weight: 300;
 }
 
 ::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
+   Mozilla Firefox 19+ 
   color: #777777;
   opacity: 1;
   font-weight: 300;
 }
 
 :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
+   Internet Explorer 10-11 
   color: #777777;
   font-weight: 300;
 }
 
 ::-ms-input-placeholder {
-  /* Microsoft Edge */
+   Microsoft Edge 
   color: #777777;
   font-weight: 300;
 }
@@ -103,10 +103,10 @@ a, a:focus, a:hover {
   padding: 60px;
 }
 
-/**
+*
  *  Typography
  *
- **/
+ *
 .btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
   font-size: 1em;
   line-height: inherit;
@@ -164,7 +164,7 @@ td, th {
   border-radius: 0px;
 }
 
-/**
+*
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
  *    contenteditable attribute is included anywhere else in the document.
@@ -172,7 +172,7 @@ td, th {
  *    that are clearfixed.
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
- */
+ 
 .clear::before, .clear::after {
   content: " ";
   display: table;
@@ -1873,9 +1873,9 @@ h1, h2, h3, h4, h5, h6 {
   right: 20px;
 }
 
-/*--------------------------------------------------------------
+--------------------------------------------------------------
 # Header
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .header-top {
   font-size: 12px;
   padding: 8px;
@@ -1998,10 +1998,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
+--------------------------------------------------------------
 # Navigation Menu
---------------------------------------------------------------*/
-/* Nav Menu Essentials */
+--------------------------------------------------------------
+ Nav Menu Essentials 
 .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
@@ -2041,7 +2041,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
-/* Nav Menu Arrows */
+ Nav Menu Arrows 
 .sf-arrows .sf-with-ul {
   padding-right: 30px;
 }
@@ -2059,12 +2059,12 @@ h1, h2, h3, h4, h5, h6 {
   content: "\f105";
 }
 
-/* Nav Meu Container */
+ Nav Meu Container 
 #nav-menu-container {
   margin: 0;
 }
 
-/* Nav Meu Styling */
+ Nav Meu Styling 
 .nav-menu a {
   padding: 0 8px 0px 8px;
   text-decoration: none;
@@ -2108,7 +2108,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-/* Mobile Nav Toggle */
+ Mobile Nav Toggle 
 #mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -2143,7 +2143,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Mobile Nav Styling */
+ Mobile Nav Styling 
 #mobile-nav {
   position: fixed;
   top: 0;
@@ -2221,7 +2221,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-/* Mobile Nav body classes */
+ Mobile Nav body classes 
 body.mobile-nav-active {
   overflow: hidden;
 }
@@ -3186,11 +3186,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-right: 30px;
 }
 
-/*
+
 ################
                Start Blog Home  Page style
 ################
-*/
+
 .blog-home-banner {
   background: url(../img/blog/blog-home-banner.jpg) center;
   background-size: cover;
@@ -3464,22 +3464,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .widget-wrap .search-widget ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
+   Chrome/Opera/Safari 
   color: #fff;
 }
 
 .widget-wrap .search-widget ::-moz-placeholder {
-  /* Firefox 19+ */
+   Firefox 19+ 
   color: #fff;
 }
 
 .widget-wrap .search-widget :-ms-input-placeholder {
-  /* IE 10+ */
+   IE 10+ 
   color: #fff;
 }
 
 .widget-wrap .search-widget :-moz-placeholder {
-  /* Firefox 18- */
+   Firefox 18- 
   color: #fff;
 }
 
@@ -3661,25 +3661,25 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .widget-wrap .newsletter-widget ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
+   Chrome/Opera/Safari 
   font-size: 13px;
   color: #ccc;
 }
 
 .widget-wrap .newsletter-widget ::-moz-placeholder {
-  /* Firefox 19+ */
+   Firefox 19+ 
   font-size: 13px;
   color: #ccc;
 }
 
 .widget-wrap .newsletter-widget :-ms-input-placeholder {
-  /* IE 10+ */
+   IE 10+ 
   font-size: 13px;
   color: #ccc;
 }
 
 .widget-wrap .newsletter-widget :-moz-placeholder {
-  /* Firefox 18- */
+   Firefox 18- 
   font-size: 13px;
   color: #ccc;
 }
@@ -3721,16 +3721,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: black;
 }
 
-/*
+
 ################
                End Blog Home  Page style
 ################
-*/
-/*
+
+
 ################
                Start Blog Details  Page style
 ################
-*/
+
 .single-post-area {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -3979,25 +3979,25 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .comment-form ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
+   Chrome/Opera/Safari 
   font-size: 13px;
   color: #777;
 }
 
 .comment-form ::-moz-placeholder {
-  /* Firefox 19+ */
+   Firefox 19+ 
   font-size: 13px;
   color: #777;
 }
 
 .comment-form :-ms-input-placeholder {
-  /* IE 10+ */
+   IE 10+ 
   font-size: 13px;
   color: #777;
 }
 
 .comment-form :-moz-placeholder {
-  /* Firefox 18- */
+   Firefox 18- 
   font-size: 13px;
   color: #777;
 }

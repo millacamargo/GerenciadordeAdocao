@@ -12,8 +12,6 @@ class Register_Animal extends CI_Controller {
 	 */
 	public function showRegister()
 	{
-		// essa levou  30 minutos
-		
 		$dados = [
 			'options_especies' => $this->Especie_model->selectEspecie()
 		];

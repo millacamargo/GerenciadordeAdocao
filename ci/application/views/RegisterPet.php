@@ -28,6 +28,11 @@
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="<?= base_url();?>assets/js/registerpet.js"></script>
 		</head>
 		<body>
 			  <header id="header" id="home">
@@ -77,34 +82,35 @@
 					</div>						
 					<div class="row justify-content-center">
 						<form method="POST" action="ci/index.php/Register_Animal/complete" class="col-lg-3">
-
-	  
 						  <div class="form-row">
+						  	
 					  <div class="form-group">
 						    <h3 for="first-name">Nome</h3>
 						    <input type="text" class="form-control" placeholder="Nome (opcional)">
 						  </div>
+						  
 						  	<div class="single-element-widget mt-30 boxsearch">
-									<h3 class="col-12 mb-30" for="especie">Espécie</h3>
+									<h3 class="col-12 mb-30" for="especies">Espécie</h3>
 									<div class="default-select" id="default-select">
-										<select id="especie" name="especie">
-										    <?php echo $options_especies ?>
+										<select id="especies" name="especies" class="form-control">
+										    <?php echo $options_especies; ?>
 										</select>
 									</div>
 							</div>
-                            <div class="single-element-widget mt-30 boxsearch">
-									<h3 class="col-12 mb-30 " for="raca">Raça</h3>
+							
+							<div class="single-element-widget mt-30 boxsearch">
+									<h3 class="col-12 mb-30" for="racas">Raça</h3>
 									<div class="default-select" id="default-select">
-										<select id="raca" name="raca" >
-											<option>Selecione a espécie acima</option>
+										<select id="racas" name="racas" class="form-control">
+										 	<option>Selecione a espécie acima</option>
 										</select>
 									</div>
-								</div>
-    
+							</div>
+								
                                <div class="single-element-widget mt-30 boxsearch">
 									<h3 class="col-12 mb-30">Cor</h3>
-									<div class="default-select" id="default-select">
-										<select>
+									<div class="default-select" id="default-select" >
+										<select class="form-control">
 										    <option value="1">-</option>
 											<option value="1">Branco</option>
 											<option value="1">Preto</option>
@@ -121,7 +127,7 @@
                             <div class="single-element-widget mt-30 boxsearch">
 									<h3 class="col-12 mb-30">Idade</h3>
 									<div class="default-select" id="default-select">
-										<select>
+										<select class="form-control">
 										    <option value="1">-</option>
 											<option value="1">< 3 meses</option>
 											<option value="1">3 meses - 6 meses</option>
@@ -133,7 +139,7 @@
                               <div class="single-element-widget mt-30 boxsearch">
 									<h3 class="col-12 mb-30">Sexo</h3>
 									<div class="default-select" id="default-select">
-										<select>
+										<select class="form-control">
 										    <option value="1">-</option>
 											<option value="1">Feminino</option>
 											<option value="1">Masculino</option>
@@ -178,17 +184,17 @@
 			<!-- End footer Area -->	
 			
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  			<script src="<?= base_url();?>assets/js/easing.min.js"></script>			
-			<script src="<?= base_url();?>assets/js/hoverIntent.js"></script>
-			<script src="<?= base_url();?>assets/js/superfish.min.js"></script>	
-			<script src="<?= base_url();?>assets/js/jquery.ajaxchimp.min.js"></script>
-			<script src="<?= base_url();?>assets/js/jquery.magnific-popup.min.js"></script>	
-			<script src="<?= base_url();?>assets/js/owl.carousel.min.js"></script>						
-			<script src="<?= base_url();?>assets/js/jquery.nice-select.min.js"></script>							
-			<script src="<?= base_url();?>assets/js/mail-script.js"></script>	
-			<script src="<?= base_url();?>assets/js/main.js"></script>	
+			<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+			<!--<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>	-->
+			<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>-->
+  	<!--		<script src="<?= base_url();?>assets/js/easing.min.js"></script>			-->
+			<!--<script src="<?= base_url();?>assets/js/hoverIntent.js"></script>-->
+			<!--<script src="<?= base_url();?>assets/js/superfish.min.js"></script>	-->
+			<!--<script src="<?= base_url();?>assets/js/jquery.ajaxchimp.min.js"></script>-->
+			<!--<script src="<?= base_url();?>assets/js/jquery.magnific-popup.min.js"></script>	-->
+			<!--<script src="<?= base_url();?>assets/js/owl.carousel.min.js"></script>						-->
+			<!--<script src="<?= base_url();?>assets/js/jquery.nice-select.min.js"></script>							-->
+			<!--<script src="<?= base_url();?>assets/js/mail-script.js"></script>	-->
+			<!--<script src="<?= base_url();?>assets/js/main.js"></script>	-->
 		</body>
 	</html>
