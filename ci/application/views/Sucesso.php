@@ -71,7 +71,7 @@
 			</section>
 			<!-- End banner Area -->	
 				
-			<!-- Start Volunteer-form Area -->
+			<!-- Start Pagina de Cadastro com sucesso -->
 			<section class="Volunteer-form-area section-gap">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
@@ -86,7 +86,7 @@
                 </div>
                 </div>
 			</section>
-			<!-- End Volunteer-form Area -->
+			<!-- End Pagina de Cadastro com sucesso -->
 																							
 			<!-- start footer Area -->		
 			<footer class="footer-area">

@@ -57,9 +57,20 @@
 			<!-- Fim da area de Banner-->
 			
 			<!-- Inicio do conteudo de erro -->
-            <div style="margin:100px 170px 100px 170px">
-                            <h1> Erro de validação, não foi possível completar o registro. </h1>
-		    </div>
+				<section class="Volunteer-form-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-9">
+							<div class="title text-center">
+								<h1 class="mb-20">Erro! Campos não preenchidos. <br> Não foi possível completar o registro.</h1>
+						</div>
+					</div>						
+					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">Cadastrar Outro Animal</button>
+					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">Ir para Resultados</button>
+                    </div>
+                </div>
+                </div>
+			</section>
 		    <!--  Fim do conteudo de erro -->
 		    
 			<!-- Inicio do Footer -->		
