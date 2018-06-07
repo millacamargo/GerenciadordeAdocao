@@ -108,41 +108,27 @@
 							</div>
 								
                                <div class="single-element-widget mt-30 boxsearch">
-									<h3 class="col-12 mb-30">Cor</h3>
+									<h3 class="col-12 mb-30" for="cores">Cor</h3>
 									<div class="default-select" id="default-select" >
-										<select class="form-control">
-										    <option value="1">-</option>
-											<option value="1">Branco</option>
-											<option value="1">Preto</option>
-											<option value="1">Creme</option>
-											<option value="1">Cinza</option>
-											<option value="1">Branco, Preto e Creme</option>
-                                            <option value="1">Creme e Preto</option>
-                                            <option value="1">Branco e Cinza</option>
-                                            <option value="1">Branco e Creme</option>
+										<select id="cores" name="cores" class="form-control">
+										    <?php echo $options_cores; ?>
 										</select>
 									</div>
 								</div>
                             
                             <div class="single-element-widget mt-30 boxsearch">
-									<h3 class="col-12 mb-30">Idade</h3>
+									<h3 class="col-12 mb-30" for="idades">Idade</h3>
 									<div class="default-select" id="default-select">
-										<select class="form-control">
-										    <option value="1">-</option>
-											<option value="1">< 3 meses</option>
-											<option value="1">3 meses - 6 meses</option>
-											<option value="1">6 meses - 1 ano</option>
-											<option value="1">1 ano ></option>
+										<select id="idades" name="idades" class="form-control">
+										    <?php echo $options_idades; ?>
 										</select>
 									</div>
 								</div>
                               <div class="single-element-widget mt-30 boxsearch">
-									<h3 class="col-12 mb-30">Sexo</h3>
+									<h3 class="col-12 mb-30" for"sexo">Sexo</h3>
 									<div class="default-select" id="default-select">
-										<select class="form-control">
-										    <option value="1">-</option>
-											<option value="1">Feminino</option>
-											<option value="1">Masculino</option>
+										<select id"sexo" name="sexo"class="form-control">
+										    <?php echo $options_sexos; ?>
 										</select>
 									</div>
 								</div>

@@ -13,7 +13,10 @@ class Register_Animal extends CI_Controller {
 	public function showRegister()
 	{
 		$dados = [
-			'options_especies' => $this->Especie_model->selectEspecie()
+			'options_especies' => $this->Especie_model->selectEspecie(),
+			'options_cores' => $this->Cor_model->selectCor(),
+			'options_idades' => $this->Idade_Model->selectIdade(),
+			'options_sexos' => $this->Sexo_model->selectSexo()
 		];
 		$this->load->view('RegisterPet', $dados);
 	}
