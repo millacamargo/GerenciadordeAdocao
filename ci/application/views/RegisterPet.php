@@ -81,12 +81,12 @@
 						</div>
 					</div>						
 					<div class="row justify-content-center">
-						<form method="POST" action="ci/index.php/Register_Animal/complete" class="col-lg-3">
+						<form method="POST" action="https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Register_Animal/inserir" enctype="multipart/form-data" class="col-lg-3">
 						  <div class="form-row">
 						  	
 					  <div class="form-group">
 						    <h3 for="first-name">Nome</h3>
-						    <input type="text" class="form-control" placeholder="Nome (opcional)">
+						    <input type="text" name="nome" class="form-control" placeholder="Nome (opcional)">
 						  </div>
 						  
 						  	<div class="single-element-widget mt-30 boxsearch">
@@ -127,25 +127,19 @@
                               <div class="single-element-widget mt-30 boxsearch">
 									<h3 class="col-12 mb-30" for"sexo">Sexo</h3>
 									<div class="default-select" id="default-select">
-										<select id"sexo" name="sexo"class="form-control">
+										<select id"sexo" name="sexo" class="form-control">
 										    <?php echo $options_sexos; ?>
 										</select>
 									</div>
 								</div>
-                              <!--<div class="single-element-widget mt-30 boxsearch">
-									<h3 class="col-6 mb-30">Tempo de abrigo</h3>
-									<div class="default-select" id="default-select">
-										<select>
-											<option value="1"> < 3 meses </option>
-											<option value="1">3 meses - 6 meses</option>
-											<option value="1">6 meses - 1 ano</option>
-											<option value="1">1 ano ></option>
-										</select>
-									</div>
-								</div>-->
-								
+							<!--	<div class="single-element-widget mt-30 boxsearch">-->
+							<!--		<h3 class="col-12 mb-30">Insira uma foto</h3>-->
+							<!--		<div class="default-select" id="default-select">-->
+							<!--<input type="file" name="imagem" class="form-control-file"/>	-->
+							<!--</div>-->
+							<!--</div>-->
 						  </div>							  
-						  <button type="submit" class="primary-btn">Registrar</button>
+						  <button type="submit" name="submit" class="primary-btn">Registrar</button>
 						</form>
 					
                     </div>

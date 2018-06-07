@@ -31,7 +31,7 @@ class Cor_model extends CI_model {
         $options = "<option value=''>Selecione a Cor</option>".PHP_EOL;
         $cores = $this->getAll();
         foreach($cores -> result() as $cor){
-            $options .= "<option value='{$cor->id}'>{$cor->cor}</option>".PHP_EOL;
+            $options .= "<option value='{$cor->cor}'>{$cor->cor}</option>".PHP_EOL;
         }
         return $options;
     }

@@ -8,7 +8,7 @@ class Idade_Model extends CI_model {
     }
     
     /**
-	 Descrição: Traz todas as especies cadastradas no banco de dados
+	 Descrição: Traz todas as idades cadastradas no banco de dados
 	 Autora: Camila Camargo
 	 Horas: 
 	 Entrada: 
@@ -21,7 +21,7 @@ class Idade_Model extends CI_model {
     }
     
     /**
-	 Descrição: monta um select de options com as especies cadastradas.
+	 Descrição: monta um select de options com as idades cadastradas.
 	 Autora: Camila Camargo
 	 Horas: 
 	 Entrada: 
@@ -31,7 +31,7 @@ class Idade_Model extends CI_model {
         $options = "<option value=''>Selecione a Idade</option>".PHP_EOL;
         $idades = $this->getAll();
         foreach($idades -> result() as $idade){
-            $options .= "<option value='{$idade->id}'>{$idade->idade}</option>".PHP_EOL;
+            $options .= "<option value='{$idade->idade}'>{$idade->idade}</option>".PHP_EOL;
         }
         return $options;
     }
