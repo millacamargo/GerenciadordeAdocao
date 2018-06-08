@@ -45,20 +45,11 @@ class Animal_Results extends CI_Controller {
 			'options_idades' => $this->Idade_Model->selectIdade(),
 			'options_sexos' => $this->Sexo_model->selectSexo()
 		];
-		$this->load->view('Results', $data);
+		$this->load->view('SearchPet', $data);
 	}
 	
-	// public function filter(){
-	// 	// Array de options para chamar na view.
-	//     $dados = [
-	// 		'options_especies' => $this->Especie_model->selectEspecie(),
-	// 		'options_cores' => $this->Cor_model->selectCor(),
-	// 		'options_idades' => $this->Idade_Model->selectIdade(),
-	// 		'options_sexos' => $this->Sexo_model->selectSexo()
-	// 	];
-	// 	$this->load->view('Results', $dados);
-	// }
-	
-
-	
+	function sendMail(){
+		$this->load->library('email');
+		$this->email->from('')
+	}
 }

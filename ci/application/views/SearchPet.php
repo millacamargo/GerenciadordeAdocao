@@ -135,6 +135,7 @@
 						        <th>Cor</th>
 						        <th>Idade</th>
 						        <th>Sexo</th>
+						        <th></th>
       						</tr>
     					</thead>
     					<tbody>
@@ -146,8 +147,8 @@
 					        	<td><?php echo $animal['cor'];?></td>
 					        	<td><?php echo $animal['idade'];?></td>
 					        	<td><?php echo $animal['sexo'];?></td>
-					        	<!--<td><button type="submit" name="submit" class="primary-btn">Adotar</button></td>-->
-					        	<td><button type="submit" name="submit" class="primary-btn">Ver mais</button></td>
+					        	<td><button type="submit" name="submit" class="primary-btn">Adotar</button></td>
+					        	<!--<td><button type="submit" name="submit" class="primary-btn">Ver mais</button></td>-->
 					      	</tr>
       					<?php } ?>
     					</tbody>
