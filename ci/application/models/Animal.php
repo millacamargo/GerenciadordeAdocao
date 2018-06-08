@@ -42,8 +42,7 @@ class Animal {
     }
     
     public function isValido(){
-        return $this->nome != "" 
-            && $this->especie != "" 
+        return $this->especie != "" 
             && $this->raca != "" 
             && $this->cor != "" 
             && $this->idade != "" 

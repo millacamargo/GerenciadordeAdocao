@@ -28,6 +28,11 @@
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="<?= base_url();?>assets/js/registerpet.js"></script>
 		</head>
 		<body>
 			  <header id="header" id="home">
@@ -57,35 +62,34 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Resultados	
+								Busca de Animais
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="results.html">Resultados</a></p>
+							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Animal_Results/showResults">Busca de Animais</a></p>
 						</div>	
 					</div>
 				</div>
 			</section>
 			<!-- End banner Area -->	
-            
+			
             <div class="whole-wrap">
 				<div class="container">
 					<div class="section-top-border">
 						<div class="row">
-                            <div class="col-lg-3 col-md-4 mt-sm-30 boxresults">
-							     <div class="single-element-widget mt-30">
-									<h3 class="mb-30">Animal</h3>
+                            
+							     <div class="single-element-widget mt-30 boxsearch">
+									<h3 class="mb-30" for="especies">Espécie</h3>
 									<div class="default-select" id="default-select">
-										<select>
-											<option value="1">Gato</option>
-                                            <option value="1">Cachorro</option>
+										<select id="especies" name="especies" class="form-control">
+										 	<?php echo $dados['options_especies']; ?>
 										</select>
 									</div>
 								</div>
-                                
-								<div class="single-element-widget mt-30">
-									<h3 class="mb-30 ">Raça</h3>
+                            
+								<div class="single-element-widget mt-30 boxsearch">
+									<h3 class="mb-30 " for="racas">Raça</h3>
 									<div class="default-select" id="default-select">
-										<select>
-											<option value="1">-</option>
+										<select id="racas" name="racas" class="form-control">
+											<option>Selecione a espécie</option>
 										</select>
 									</div>
 								</div>
@@ -93,62 +97,63 @@
                                <div class="single-element-widget mt-30 boxsearch">
 									<h3 class="mb-30">Cor</h3>
 									<div class="default-select" id="default-select">
-										<select>
-											<option value="1">Branco</option>
-											<option value="1">Preto</option>
-											<option value="1">Creme</option>
-											<option value="1">Cinza</option>
-											<option value="1">Branco, Preto e Creme</option>
-                                            <option value="1">Creme e Preto</option>
-                                            <option value="1">Branco e Cinza</option>
-                                            <option value="1">Branco e Creme</option>
+										<select class="form-control">
+											 <?php echo $dados['options_cores']; ?>
 										</select>
 									</div>
 								</div>
                             
-                            <div class="single-element-widget mt-30 ">
+                            <div class="single-element-widget mt-30 boxsearch">
 									<h3 class="mb-30">Idade</h3>
 									<div class="default-select" id="default-select">
-										<select>
-											<option value="1">< 3 meses</option>
-											<option value="1">3 meses - 6 meses</option>
-											<option value="1">6 meses - 1 ano</option>
-											<option value="1">1 ano ></option>
+										<select class="form-control">
+											<?php echo $dados['options_idades']; ?>
 										</select>
 									</div>
 								</div>
-                              <div class="single-element-widget mt-30 ">
+                              <div class="single-element-widget mt-30 boxsearch">
 									<h3 class="mb-30">Sexo</h3>
 									<div class="default-select" id="default-select">
-										<select>
-											<option value="1">Feminino</option>
-											<option value="1">Masculino</option>
+										<select class="form-control">
+											<?php echo $dados['options_sexos']; ?>
 										</select>
 									</div>
 								</div>
-                              <div class="single-element-widget mt-30 ">
-									<h3 class="mb-30">Tempo de abrigo</h3>
-									<div class="default-select" id="default-select">
-										<select>
-											<option value="1"> < 3 meses </option>
-											<option value="1">3 meses - 6 meses</option>
-											<option value="1">6 meses - 1 ano</option>
-											<option value="1">1 ano ></option>
-										</select>
-									</div>
-								</div>
-                            <div class="button-group-area">
-						<a href="#" class="genric-btn success">Pesquisar</a>
-					       </div>
-                        </div>
 						</div>
-
-                        </div>
+						<button type="submit" name="submit" class="primary-btn">Pesquisar</button>
+      <!--                      <div class="button-group-area">-->
+						<!--<a href="#" class="genric-btn success">Pesquisar</a>-->
+					 <!--      </div>-->
 					</div>
-                    
-				</div>
-			
-            
+                    	<h2>Animais em Adoção</h2>
+  					<table class="table">
+    					<thead>
+     						 <tr>
+						        <th>Nome</th>
+						        <th>Especie</th>
+						        <th>Raça</th>
+						        <th>Cor</th>
+						        <th>Idade</th>
+						        <th>Sexo</th>
+      						</tr>
+    					</thead>
+    					<tbody>
+    					<?php foreach ($results as $animal){ ?>
+					     	<tr>
+					        	<td><?php echo $animal['nome']; ?></td>
+					        	<td><?php echo $animal['especie'];?></td>
+					        	<td><?php echo $animal['raca'];?></td>
+					        	<td><?php echo $animal['cor'];?></td>
+					        	<td><?php echo $animal['idade'];?></td>
+					        	<td><?php echo $animal['sexo'];?></td>
+					        	<!--<td><button type="submit" name="submit" class="primary-btn">Adotar</button></td>-->
+					        	<td><button type="submit" name="submit" class="primary-btn">Ver mais</button></td>
+					      	</tr>
+      					<?php } ?>
+    					</tbody>
+  					</table>
+			</div>
+			</div>
 																							
 			<!-- start footer Area -->		
 			<footer class="footer-area">
@@ -162,21 +167,25 @@
 						</div>						
 					</div>
 				</div>
+				
+			</div>
+  			
 			</footer>
 			<!-- End footer Area -->	
 
-			<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			
-			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  			<script src="<?= base_url();?>assets/js/easing.min.js"></script>			
-			<script src="<?= base_url();?>assets/js/hoverIntent.js"></script>
-			<script src="<?= base_url();?>assets/js/superfish.min.js"></script>	
-			<script src="<?= base_url();?>assets/js/jquery.ajaxchimp.min.js"></script>
-			<script src="<?= base_url();?>assets/js/jquery.magnific-popup.min.js"></script>	
-			<script src="<?= base_url();?>assets/js/owl.carousel.min.js"></script>						
-			<script src="<?= base_url();?>assets/js/jquery.nice-select.min.js"></script>							
-			<script src="<?= base_url();?>assets/js/mail-script.js"></script>	
-			<script src="<?= base_url();?>assets/js/main.js"></script>	
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<!--<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>-->
+			<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+			<!--<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			-->
+			<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>-->
+  	<!--		<script src="<?= base_url();?>assets/js/easing.min.js"></script>			-->
+			<!--<script src="<?= base_url();?>assets/js/hoverIntent.js"></script>-->
+			<!--<script src="<?= base_url();?>assets/js/superfish.min.js"></script>	-->
+			<!--<script src="<?= base_url();?>assets/js/jquery.ajaxchimp.min.js"></script>-->
+			<!--<script src="<?= base_url();?>assets/js/jquery.magnific-popup.min.js"></script>	-->
+			<!--<script src="<?= base_url();?>assets/js/owl.carousel.min.js"></script>						-->
+			<!--<script src="<?= base_url();?>assets/js/jquery.nice-select.min.js"></script>							-->
+			<!--<script src="<?= base_url();?>assets/js/mail-script.js"></script>	-->
+			<!--<script src="<?= base_url();?>assets/js/main.js"></script>	-->
 		</body>
 	</html>

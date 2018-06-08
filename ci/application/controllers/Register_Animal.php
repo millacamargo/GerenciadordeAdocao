@@ -25,7 +25,7 @@ class Register_Animal extends CI_Controller {
 	/*
 	 Descrição:  
 	 Autora: Camila Camargo
-	 Horas: 
+	 Horas: 1 minuto
 	 Entrada: 
 	 Saída:
 	 */
