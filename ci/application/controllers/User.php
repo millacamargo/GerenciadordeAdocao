@@ -39,10 +39,14 @@ class User extends CI_Controller {
         if($usuario->isValido()){
             $this->load->model("insertdao");
             $this->insertdao->insertObject($usuario);
-            redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register',true);
+            redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/sucesso',true);
         }else{
             $this->load->view("erro");
         }
+    }
+    //Função para abrir a pagina de sucesso
+    public function sucesso(){
+        $this->load->view("success");
     }
     
     //Função para autenticar-se e iniciar uma sessão
@@ -52,7 +56,7 @@ class User extends CI_Controller {
         $this->load->model("logindao");
         $usuario = $this->logindao->getUser($email,$senha);
         //Validação de usuario, inicia uma session, abre a dash e pega o primeiro nome do usuario logado
-        if(isset($usuario)){
+        if(isset($usuario)) {
             $this->session->set_userdata("primeironome",$usuario->getPrimeiroNome());
             redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard',true);
         }else{
@@ -61,6 +65,8 @@ class User extends CI_Controller {
             redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login',true);
         }
     }
+    
+    
 		//Função para deslogar-se e encerrar a sessão
         public function logout(){
         $this->session->unset_userdata("primeironome");

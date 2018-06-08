@@ -75,7 +75,7 @@ class Usuario {
         $aux["id"] = $this->id;
         return $aux;
     }
-    //NOME DA TABELA
+    //Nome da tabela no banco
     public function getClassName(){
         return "Usuario";
     }

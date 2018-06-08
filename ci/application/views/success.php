@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="shortcut icon" href="img/fav.png">
 		<meta charset="UTF-8">
-		<title>Adote um animal | Erro </title>
+		<title>Adote um animal | Sucesso </title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--CSS -->
@@ -47,20 +47,20 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Erro de validação	
+								Sucesso	
 							</h1>	
-							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Erro de validação</a></p>
+							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Sucesso</a></p>
 						</div>	
 					</div>
 				</div>
 			</section>
 			<!-- Fim da area de Banner-->
 			
-			<!-- Inicio do conteudo de erro -->
-            <div style="margin:100px 170px 100px 170px">
-                            <h1> Erro de validação, não foi possível completar o registro. </h1>
+			<!-- Inicio do conteudo de sucesso -->
+            <div style="margin:100px 170px 100px 400px">
+                            <h1> Cadastro efetuado com sucesso! </h1>
 		    </div>
-		    <!--  Fim do conteudo de erro -->
+		    <!--  Fim do conteudo de sucesso -->
 		    
 			<!-- Inicio do Footer -->		
 			<footer class="footer-area">

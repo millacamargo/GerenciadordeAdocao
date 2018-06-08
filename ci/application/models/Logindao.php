@@ -3,7 +3,7 @@
      //Autor: Luis Felipe
      //Tempo: 40 minutos
      //Entrada: Vai puxar o email e senha que foram inseridos na tabela de usuario
-     //Se o numero de linhas for maior que 1 (se houver usuario), ele retornará tudo de um usuario de acordo
+     //Se o numero de linhas for igual a 1 (se houver usuario), ele retornará tudo de um usuario de acordo
      //com o email e senha digitados, caso contrario retornará nulo.
 defined('BASEPATH') OR exit('No direct script access allowed');
 
