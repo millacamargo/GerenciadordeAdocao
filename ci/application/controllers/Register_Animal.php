@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Register_Animal extends CI_Controller {
     
-	/**
+	/*
 	 Descrição: Esta função faz a página e o array de informações cadastrais rodarem na view.
 	 Autora: Camila Camargo
 	 Horas: 10 minutos
@@ -22,13 +22,21 @@ class Register_Animal extends CI_Controller {
 		$this->load->view('RegisterPet', $dados);
 	}
 	
-	// Função para abrir a página de cadastro de usuario
+	/*
+	 Descrição:  
+	 Autora: Camila Camargo
+	 Horas: 
+	 Entrada: 
+	 Saída:
+	 */
+	
 	public function sucesso()
 	{
 		$this->load->view('Sucesso');
 	}
 	
-	/**
+
+	/*
 	 Descrição:  Função para pegar o que foi digitado e selecionado no form, em caso de sucesso recarregará a página de cadastro,
 	 caso contrário abrirá uma página de erro
 	 Autora: Camila Camargo
@@ -36,7 +44,6 @@ class Register_Animal extends CI_Controller {
 	 Entrada: 
 	 Saída:
 	 */
-	
 		public function inserir(){
         require_once APPPATH."/models/Animal.php";
         $nome = $this->input->post("nome");
