@@ -63,9 +63,9 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Busca de Animais
+								Animais Registrados
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Animal_Results/showResults">Busca de Animais</a></p>
+							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Animal_Info/showPets">Animais Registrados</a></p>
 						</div>	
 					</div>
 				</div>
@@ -74,63 +74,14 @@
 			
             <div class="whole-wrap">
 				<div class="container">
-					<!--<div class="section-top-border">-->
-				<!--		<div class="row">-->
-    <!--                        <form method="POST" action="https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Animal_Results/getResults" enctype="multipart/form-data" class="col-lg-3">-->
-				<!--			     <div class="single-element-widget mt-30 boxsearch">-->
-				<!--					<h3 class="mb-30" for="especies">Espécie</h3>-->
-				<!--					<div class="default-select" id="default-select">-->
-				<!--						<select id="especies" name="especies" class="form-control">-->
-				<!--						 	<?php echo $dados['options_especies']; ?>-->
-				<!--						</select>-->
-				<!--					</div>-->
-				<!--				</div>-->
-                            
-				<!--				<div class="single-element-widget mt-30 boxsearch">-->
-				<!--					<h3 class="mb-30 " for="racas">Raça</h3>-->
-				<!--					<div class="default-select" id="default-select">-->
-				<!--						<select id="racas" name="racas" class="form-control">-->
-				<!--							<option>Selecione a espécie</option>-->
-				<!--						</select>-->
-				<!--					</div>-->
-				<!--				</div>-->
-                            
-    <!--                           <div class="single-element-widget mt-30 boxsearch">-->
-				<!--					<h3 class="mb-30" for="cores">Cor</h3>-->
-				<!--					<div class="default-select" id="default-select">-->
-				<!--						<select name="cores" class="form-control">-->
-				<!--							 <?php echo $dados['options_cores']; ?>-->
-				<!--						</select>-->
-				<!--					</div>-->
-				<!--				</div>-->
-                            
-    <!--                        <div class="single-element-widget mt-30 boxsearch">-->
-				<!--					<h3 class="mb-30" f0r="idades">Idade</h3>-->
-				<!--					<div class="default-select" id="default-select">-->
-				<!--						<select name= "idades" class="form-control">-->
-				<!--							<?php echo $dados['options_idades']; ?>-->
-				<!--						</select>-->
-				<!--					</div>-->
-				<!--				</div>-->
-    <!--                          <div class="single-element-widget mt-30 boxsearch">-->
-				<!--					<h3 class="mb-30" for="sexos">Sexo</h3>-->
-				<!--					<div class="default-select" id="default-select">-->
-				<!--						<select name="sexos" class="form-control">-->
-				<!--							<?php echo $dados['options_sexos']; ?>-->
-				<!--						</select>-->
-				<!--					</div>-->
-				<!--				</div>-->
-				<!--		</div>-->
-				<!--		<button type="submit" name="submit" class="primary-btn">Pesquisar</button>-->
-						<!--</form>-->
-      <!--                      <div class="button-group-area">-->
-						<!--<a href="#" class="genric-btn success">Pesquisar</a>-->
-					 <!--      </div>-->
-					<!--</div>-->
                     	<h2>Animais em Adoção</h2>
+                    	<button type="button" onclick="window.location.href='https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">+ Novo Animal</button>
+                    	<form method="POST" action="https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Animal_Info/showPets">
+                    <button type="submit" name="delete" value="delete" class="primary-btn" onclick="return confirm('Deseja realmente excluir o animal?');">Remover</button>
   					<table class="table">
     					<thead>
      						 <tr>
+     						 	<th>Selecionar</th>
 						        <th>Nome</th>
 						        <th>Especie</th>
 						        <th>Raça</th>
@@ -143,18 +94,19 @@
     					<tbody>
     					<?php foreach ($results as $animal){ ?>
 					     	<tr>
-					        	<td><?php echo $animal['nome']; ?></td>
+					     		<td><input type="checkbox" name="animal_id[]" value="<?php echo $animal['id']?>"/></td>
+					        	<td name="nome"><?php echo $animal['nome']; ?></td>
 					        	<td><?php echo $animal['especie'];?></td>
 					        	<td><?php echo $animal['raca'];?></td>
 					        	<td><?php echo $animal['cor'];?></td>
 					        	<td><?php echo $animal['idade'];?></td>
 					        	<td><?php echo $animal['sexo'];?></td>
-					        	<td><button type="submit" name="submit" class="primary-btn">Adotar</button></td>
-					        	<!--<td><button type="submit" name="submit" class="primary-btn">Ver mais</button></td>-->
+					        	<!--<td><button type="submit" name="submit" class="primary-btn" onclick="return confirm('Deseja realmente excluir o animal?');">Remover</button></td>-->
 					      	</tr>
       					<?php } ?>
     					</tbody>
   					</table>
+  					</form>
 			</div>
 			</div>
 																							

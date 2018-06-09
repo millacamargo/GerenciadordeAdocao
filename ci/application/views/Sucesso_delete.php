@@ -77,10 +77,9 @@
 					<div class="row d-flex justify-content-center">
 						<div class="menu-content pb-60 col-lg-9">
 							<div class="title text-center">
-								<h1 class="mb-20">Cadastrado com Sucesso!</h1>
+								<h1 class="mb-20">Deletado com Sucesso!</h1>
 						</div>
 					</div>						
-					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">Cadastrar Outro Animal</button>
 					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Animal_Info/showPets';" class="primary-btn">Ir para a Tabela</button>
                     </div>
                 </div>

@@ -21,6 +21,23 @@ class Results_model extends CI_model {
         return $query->result_array();
     }
     
+    	/*
+	 Descrição:  
+	 Autora: Camila Camargo
+	 Horas: 
+	 Entrada: 
+	 Saída:
+	 */
+    public function deleta($params){
+     foreach($params as $animal_id){
+         $conditions = array(
+             'id' => $animal_id
+             );
+            $this->db->where($conditions);
+            $this->db->delete('Cadastro');
+         
+     }
+    }
     // public function compareFilter($especies, $racas, $cores, $idades, $sexos){
     //     $this->db->select('Cadastro.especie', 'Cadastro.raca','Cadastro.cor','Cadastro.idade','Cadastro.sexo', 'Especie.especie',
     //     'Raca.raca', 'Cor.cor', 'Idade.idade','Sexo.sexo');
