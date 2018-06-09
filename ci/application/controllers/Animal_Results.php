@@ -39,17 +39,50 @@ class Animal_Results extends CI_Controller {
 		// var_dump($data['results']);die;
 		
 	    // Array de options para chamar na view.
-	    $data['dados'] = [
-			'options_especies' => $this->Especie_model->selectEspecie(),
-			'options_cores' => $this->Cor_model->selectCor(),
-			'options_idades' => $this->Idade_Model->selectIdade(),
-			'options_sexos' => $this->Sexo_model->selectSexo()
-		];
+	 //   $data['dados'] = [
+		// 	'options_especies' => $this->Especie_model->selectEspecie(),
+		// 	'options_cores' => $this->Cor_model->selectCor(),
+		// 	'options_idades' => $this->Idade_Model->selectIdade(),
+		// 	'options_sexos' => $this->Sexo_model->selectSexo()
+		// ];
+		
 		$this->load->view('SearchPet', $data);
 	}
 	
-	function sendMail(){
-		$this->load->library('email');
-		$this->email->from('')
+	// 	public function getResults(){
+// 		$especies = $this->input->post('especies');
+// 		$racas = $this->input->post('racas');
+// 		$cores = $this->input->post('cores');
+// 		$idades = $this->input->post('idades');
+// 		$sexos = $this->input->post('sexos');
+// 		// $data['fields'] = array(
+// 		// 	'nome',
+// 		// 	'especie',
+// 		// 	'raca',
+// 		// 	'cor',
+// 		// 	'idade',
+// 		// 	'sexo'
+		
+// 		// 	);
+// 		// $data['order'] = 'nome';
+// 		// $data['results'] = $this->Results_model->getAll($data);
+// 		$data['dados'] = [
+// 			'options_especies' => $this->Especie_model->selectEspecie(),
+// 			'options_cores' => $this->Cor_model->selectCor(),
+// 			'options_idades' => $this->Idade_Model->selectIdade(),
+// 			'options_sexos' => $this->Sexo_model->selectSexo()
+// 		];
+// 		$data['compareFilter'] = $this->Results_model->compareFilter($especies, $racas, $cores, $idades, $sexos);
+// 		echo '<pre>';
+// 		print_r($data['compareFilter']);
+// 		echo '</pre>';
+// 		exit();
+// 		$this->load->view('Get_Results', $data);
+// 	}
+	
+// 	// function sendMail(){
+// 	// 	$this->load->library('email');
+// 	// 	$this->email->from('')
+// 	// }
 	}
-}
+	

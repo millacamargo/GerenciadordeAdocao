@@ -21,6 +21,19 @@ class Results_model extends CI_model {
         return $query->result_array();
     }
     
+    // public function compareFilter($especies, $racas, $cores, $idades, $sexos){
+    //     $this->db->select('Cadastro.especie', 'Cadastro.raca','Cadastro.cor','Cadastro.idade','Cadastro.sexo', 'Especie.especie',
+    //     'Raca.raca', 'Cor.cor', 'Idade.idade','Sexo.sexo');
+    //     $this->db->from('Cadastro');
+    //     $this->db->join('Especie', 'Especie.especie = Cadastro.especie' );
+    //     $this->db->join('Raca', 'Raca.raca = Cadastro.raca' );
+    //     $this->db->join('Cor', 'Cor.cor = Cadastro.cor' );
+    //     $this->db->join('Idade', 'Idade.idade = Cadastro.idade' );
+    //     $this->db->join('Sexo', 'Sexo.sexo = Cadastro.sexo' );
+    //     $this->db->where(['Especie.especie'=>$especies,'Raca.raca'=>$racas, 'Cor.cor'=>$cores,'Idade.idade'=>$idades,'Sexo.sexo'=>$sexos]);
+    //     $query = $this->db->get();
+    //     return $query->result();
+    // }
     
 	
 }

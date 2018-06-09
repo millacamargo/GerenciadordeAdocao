@@ -73,58 +73,59 @@
 			
             <div class="whole-wrap">
 				<div class="container">
-					<div class="section-top-border">
-						<div class="row">
+					<!--<div class="section-top-border">-->
+				<!--		<div class="row">-->
+    <!--                        <form method="POST" action="https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Animal_Results/getResults" enctype="multipart/form-data" class="col-lg-3">-->
+				<!--			     <div class="single-element-widget mt-30 boxsearch">-->
+				<!--					<h3 class="mb-30" for="especies">Espécie</h3>-->
+				<!--					<div class="default-select" id="default-select">-->
+				<!--						<select id="especies" name="especies" class="form-control">-->
+				<!--						 	<?php echo $dados['options_especies']; ?>-->
+				<!--						</select>-->
+				<!--					</div>-->
+				<!--				</div>-->
                             
-							     <div class="single-element-widget mt-30 boxsearch">
-									<h3 class="mb-30" for="especies">Espécie</h3>
-									<div class="default-select" id="default-select">
-										<select id="especies" name="especies" class="form-control">
-										 	<?php echo $dados['options_especies']; ?>
-										</select>
-									</div>
-								</div>
+				<!--				<div class="single-element-widget mt-30 boxsearch">-->
+				<!--					<h3 class="mb-30 " for="racas">Raça</h3>-->
+				<!--					<div class="default-select" id="default-select">-->
+				<!--						<select id="racas" name="racas" class="form-control">-->
+				<!--							<option>Selecione a espécie</option>-->
+				<!--						</select>-->
+				<!--					</div>-->
+				<!--				</div>-->
                             
-								<div class="single-element-widget mt-30 boxsearch">
-									<h3 class="mb-30 " for="racas">Raça</h3>
-									<div class="default-select" id="default-select">
-										<select id="racas" name="racas" class="form-control">
-											<option>Selecione a espécie</option>
-										</select>
-									</div>
-								</div>
+    <!--                           <div class="single-element-widget mt-30 boxsearch">-->
+				<!--					<h3 class="mb-30" for="cores">Cor</h3>-->
+				<!--					<div class="default-select" id="default-select">-->
+				<!--						<select name="cores" class="form-control">-->
+				<!--							 <?php echo $dados['options_cores']; ?>-->
+				<!--						</select>-->
+				<!--					</div>-->
+				<!--				</div>-->
                             
-                               <div class="single-element-widget mt-30 boxsearch">
-									<h3 class="mb-30">Cor</h3>
-									<div class="default-select" id="default-select">
-										<select class="form-control">
-											 <?php echo $dados['options_cores']; ?>
-										</select>
-									</div>
-								</div>
-                            
-                            <div class="single-element-widget mt-30 boxsearch">
-									<h3 class="mb-30">Idade</h3>
-									<div class="default-select" id="default-select">
-										<select class="form-control">
-											<?php echo $dados['options_idades']; ?>
-										</select>
-									</div>
-								</div>
-                              <div class="single-element-widget mt-30 boxsearch">
-									<h3 class="mb-30">Sexo</h3>
-									<div class="default-select" id="default-select">
-										<select class="form-control">
-											<?php echo $dados['options_sexos']; ?>
-										</select>
-									</div>
-								</div>
-						</div>
-						<button type="submit" name="submit" class="primary-btn">Pesquisar</button>
+    <!--                        <div class="single-element-widget mt-30 boxsearch">-->
+				<!--					<h3 class="mb-30" f0r="idades">Idade</h3>-->
+				<!--					<div class="default-select" id="default-select">-->
+				<!--						<select name= "idades" class="form-control">-->
+				<!--							<?php echo $dados['options_idades']; ?>-->
+				<!--						</select>-->
+				<!--					</div>-->
+				<!--				</div>-->
+    <!--                          <div class="single-element-widget mt-30 boxsearch">-->
+				<!--					<h3 class="mb-30" for="sexos">Sexo</h3>-->
+				<!--					<div class="default-select" id="default-select">-->
+				<!--						<select name="sexos" class="form-control">-->
+				<!--							<?php echo $dados['options_sexos']; ?>-->
+				<!--						</select>-->
+				<!--					</div>-->
+				<!--				</div>-->
+				<!--		</div>-->
+				<!--		<button type="submit" name="submit" class="primary-btn">Pesquisar</button>-->
+						<!--</form>-->
       <!--                      <div class="button-group-area">-->
 						<!--<a href="#" class="genric-btn success">Pesquisar</a>-->
 					 <!--      </div>-->
-					</div>
+					<!--</div>-->
                     	<h2>Animais em Adoção</h2>
   					<table class="table">
     					<thead>
