@@ -59,6 +59,7 @@
 			<!-- Inicio do conteudo de sucesso -->
             <div style="margin:100px 170px 100px 400px">
                             <h1> Cadastro efetuado com sucesso! </h1>
+                            <h4 style="color:red"> Redirecionando... </h4>
 		    </div>
 		    <!--  Fim do conteudo de sucesso -->
 		    

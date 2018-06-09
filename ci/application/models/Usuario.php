@@ -4,7 +4,7 @@
      //Tempo: 50 minutos
      //Entrada: São declaradas todas as variaveis necessarias para se criar um novo usuario e inseri-lo no banco
      //Verifica se são validos todos os campos que forem digitados no form
-     //Cria-se um array de usuarios para receber varios usuarios
+     //Cria-se um array para receber as informações
 class Usuario {
     
     private $primeironome, $segundonome, $rg, $cpf, $numerotel, $numerocel, $email, $senha, $id;
@@ -79,6 +79,5 @@ class Usuario {
     public function getClassName(){
         return "Usuario";
     }
-    
 }
 ?>

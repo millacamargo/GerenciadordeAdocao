@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 class LoginDAO extends CI_Model {
-    public function getUser($email,$senha){
+    public function getUser($email,$senha){ 
             $this->db->where('email',$email);
 		    $this->db->where('senha',$senha);
 		    $usr = $this->db->get('Usuario');

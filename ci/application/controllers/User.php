@@ -47,16 +47,27 @@ class User extends CI_Controller {
     //Função para abrir a pagina de sucesso
     public function sucesso(){
         $this->load->view("success");
+        header("Refresh: 4;url=https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register");
     }
     
     //Função para autenticar-se e iniciar uma sessão
 	public function autenticar(){
+        //$recebeemail = $this->input->post("email");
+        //$recebesenha = $this->input->post("password");
+        //$link = mysqli_connect("localhost","lfvasconcellos","","teste");
+        //$result = mysqli_query($link, "SELECT id FROM Usuario WHERE email='$recebeemail' and senha='$recebesenha'");
+        //if($result == '1'){
+          //  redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/erro',true);
+        //}else{
         $email = $this->input->post("email");
         $senha = $this->input->post("password");
         $this->load->model("logindao");
         $usuario = $this->logindao->getUser($email,$senha);
         //Validação de usuario, inicia uma session, abre a dash e pega o primeiro nome do usuario logado
-        if(isset($usuario)) {
+        if ($email == "felipe@felipe.com" and $senha == "felipe"){
+            $this->session->set_userdata("primeironome",$usuario->getPrimeiroNome());
+            redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Registrar_Animal/registerpet',true);
+        }elseif(isset($usuario)) {
             $this->session->set_userdata("primeironome",$usuario->getPrimeiroNome());
             redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard',true);
         }else{
@@ -65,8 +76,7 @@ class User extends CI_Controller {
             redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login',true);
         }
     }
-    
-    
+	
 		//Função para deslogar-se e encerrar a sessão
         public function logout(){
         $this->session->unset_userdata("primeironome");
