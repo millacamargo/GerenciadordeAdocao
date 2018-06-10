@@ -1,22 +1,16 @@
 <?php
     class Raca extends CI_controller {
-        	/**
-	 Descrição:
-	 Autora: Camila Camargo
-	 Horas: 
-	 Entrada: 
-	 Saída:
-	 */
+    
         public function __construct(){
             parent::__construct();
         }
         
-        	/**
-	 Descrição: Esta função chama o ajax e o raca model para vincular os dois.
+    /*
+	 Descrição: Esta função chama o ajax e o raça model para vincular os dois.
 	 Autora: Camila Camargo
-	 Horas: 7 minutos
-	 Entrada: 
-	 Saída:
+	 Horas: 10 minutos
+	 Entrada: Id das especies.
+	 Saída: As respectitivas raças dessas espécies que será puxado pelo jquery via post.
 	 */
         public function getRaca(){
             

@@ -74,71 +74,20 @@
 			
             <div class="whole-wrap">
 				<div class="container">
-					<!--<div class="section-top-border">-->
-				<!--		<div class="row">-->
-    <!--                        <form method="POST" action="https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Animal_Results/getResults" enctype="multipart/form-data" class="col-lg-3">-->
-				<!--			     <div class="single-element-widget mt-30 boxsearch">-->
-				<!--					<h3 class="mb-30" for="especies">Espécie</h3>-->
-				<!--					<div class="default-select" id="default-select">-->
-				<!--						<select id="especies" name="especies" class="form-control">-->
-				<!--						 	<?php echo $dados['options_especies']; ?>-->
-				<!--						</select>-->
-				<!--					</div>-->
-				<!--				</div>-->
-                            
-				<!--				<div class="single-element-widget mt-30 boxsearch">-->
-				<!--					<h3 class="mb-30 " for="racas">Raça</h3>-->
-				<!--					<div class="default-select" id="default-select">-->
-				<!--						<select id="racas" name="racas" class="form-control">-->
-				<!--							<option>Selecione a espécie</option>-->
-				<!--						</select>-->
-				<!--					</div>-->
-				<!--				</div>-->
-                            
-    <!--                           <div class="single-element-widget mt-30 boxsearch">-->
-				<!--					<h3 class="mb-30" for="cores">Cor</h3>-->
-				<!--					<div class="default-select" id="default-select">-->
-				<!--						<select name="cores" class="form-control">-->
-				<!--							 <?php echo $dados['options_cores']; ?>-->
-				<!--						</select>-->
-				<!--					</div>-->
-				<!--				</div>-->
-                            
-    <!--                        <div class="single-element-widget mt-30 boxsearch">-->
-				<!--					<h3 class="mb-30" f0r="idades">Idade</h3>-->
-				<!--					<div class="default-select" id="default-select">-->
-				<!--						<select name= "idades" class="form-control">-->
-				<!--							<?php echo $dados['options_idades']; ?>-->
-				<!--						</select>-->
-				<!--					</div>-->
-				<!--				</div>-->
-    <!--                          <div class="single-element-widget mt-30 boxsearch">-->
-				<!--					<h3 class="mb-30" for="sexos">Sexo</h3>-->
-				<!--					<div class="default-select" id="default-select">-->
-				<!--						<select name="sexos" class="form-control">-->
-				<!--							<?php echo $dados['options_sexos']; ?>-->
-				<!--						</select>-->
-				<!--					</div>-->
-				<!--				</div>-->
-				<!--		</div>-->
-				<!--		<button type="submit" name="submit" class="primary-btn">Pesquisar</button>-->
-						<!--</form>-->
-      <!--                      <div class="button-group-area">-->
-						<!--<a href="#" class="genric-btn success">Pesquisar</a>-->
-					 <!--      </div>-->
-					<!--</div>-->
                     	<h2>Animais em Adoção</h2>
-  					<table class="table">
+                    <div class="table-responsive">
+                    	<table class="table">
     					<thead>
-     						 <tr>
-						        <th>Nome</th>
-						        <th>Especie</th>
-						        <th>Raça</th>
-						        <th>Cor</th>
-						        <th>Idade</th>
-						        <th>Sexo</th>
-						        <th></th>
-      						</tr>
+    						<tr>
+    						<th>Nome</th>
+    						<th>Espécie</th>
+    						<th>Raça</th>
+    						<th>Cor</th>
+    						<th>Idade</th>
+    						<th>Sexo</th>
+    						<th>Mais Descrições</th>
+    						<th></th>
+    						</tr>
     					</thead>
     					<tbody>
     					<?php foreach ($results as $animal){ ?>
@@ -149,12 +98,13 @@
 					        	<td><?php echo $animal['cor'];?></td>
 					        	<td><?php echo $animal['idade'];?></td>
 					        	<td><?php echo $animal['sexo'];?></td>
+					        	<td><?php echo $animal['descricao'];?></td>
 					        	<td><button type="submit" name="submit" class="primary-btn">Adotar</button></td>
-					        	<!--<td><button type="submit" name="submit" class="primary-btn">Ver mais</button></td>-->
 					      	</tr>
       					<?php } ?>
     					</tbody>
-  					</table>
+    				</table>
+    			</div>
 			</div>
 			</div>
 																							
@@ -177,18 +127,5 @@
 			<!-- End footer Area -->	
 
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<!--<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>-->
-			<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
-			<!--<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			-->
-			<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>-->
-  	<!--		<script src="<?= base_url();?>assets/js/easing.min.js"></script>			-->
-			<!--<script src="<?= base_url();?>assets/js/hoverIntent.js"></script>-->
-			<!--<script src="<?= base_url();?>assets/js/superfish.min.js"></script>	-->
-			<!--<script src="<?= base_url();?>assets/js/jquery.ajaxchimp.min.js"></script>-->
-			<!--<script src="<?= base_url();?>assets/js/jquery.magnific-popup.min.js"></script>	-->
-			<!--<script src="<?= base_url();?>assets/js/owl.carousel.min.js"></script>						-->
-			<!--<script src="<?= base_url();?>assets/js/jquery.nice-select.min.js"></script>							-->
-			<!--<script src="<?= base_url();?>assets/js/mail-script.js"></script>	-->
-			<!--<script src="<?= base_url();?>assets/js/main.js"></script>	-->
 		</body>
 	</html>

@@ -6,10 +6,11 @@ class Animal_Info extends CI_Controller {
     function __construct(){
         parent::__construct();
     }
+    
 	/*
 	 Descrição:  
 	 Autora: Camila Camargo
-	 Horas: 1 minuto
+	 Horas: 
 	 Entrada: 
 	 Saída:
 	 */
@@ -22,7 +23,7 @@ class Animal_Info extends CI_Controller {
 		extract($_POST);
 		
 		if($delete){
-			// processa a delecao de dados
+			// processa a deleção de dados
 			$this->Results_model->deleta($animal_id);
 		}
 		// seta os dados da tabela Cadastro para mostrar ao usuario
@@ -36,17 +37,11 @@ class Animal_Info extends CI_Controller {
 			'sexo'
 		
 			);
-		// available data has del_flag = 0 and deleted data has del_flag = 1
-		// $data['conditions'] = array(
-		// 	'del_flag' => 0
-		// 	);
-		
+
 		$data['order'] = 'nome';
 	
 		// processo de pegar os dados do BD
 		$data['results'] = $this->Results_model->getAll($data);
-		
-		// var_dump($data['results']);die;
 		
 		$this->load->view('Save_Animal', $data);
 	}

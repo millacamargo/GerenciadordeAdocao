@@ -1,9 +1,8 @@
-//Descrição: Metodo que retorna no select as informações no Banco de dados conforme a opção clicada no select acima.
-     //Autor: Camila Camargo
-     //Tempo: 30 minutos
-     //Entrada: São declaradas todas as variaveis necessarias para se criar um novo usuario e inseri-lo no banco
-     //Verifica se são validos todos os campos que forem digitados no form
-     //Cria-se um array de usuarios para receber varios usuarios
+//Descrição: Metodo que retorna no select as raças do Banco de dados conforme a opção clicada no select de espécie.
+//Autor: Camila Camargo
+//Tempo: Depende, se contar que quebrei a cabeça com esse método foram uns 3 dias nisso.
+//Entrada: 
+//Saída:
 
 $(function(){
         $('#especies').change(function(){
@@ -15,4 +14,4 @@ $(function(){
                 $('#racas').html(data);
             });
         });
-    });
+});

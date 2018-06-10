@@ -1,15 +1,17 @@
 <?php
-     //Descrição: Metodo com a classe Usuario que será inserido no banco
-     //Autor: Camila Camargo
-     //Tempo: 30 minutos
-     //Entrada: São declaradas todas as variaveis necessarias para se criar um novo usuario e inseri-lo no banco
-     //Verifica se são validos todos os campos que forem digitados no form
-     //Cria-se um array de usuarios para receber varios usuarios
+
 class Animal {
     
-    private $nome, $especie, $raca, $cor, $idade, $sexo, $id;
+    private $nome, $descricao, $especie, $raca, $cor, $idade, $sexo, $id;
     
-    public function Animal ($nome, $especie, $raca, $cor, $idade, $sexo, $id=0){
+    /*
+	 Descrição: Construtor para os objetos do BD.
+	 Autora: Camila Camargo
+	 Horas: 
+	 Entrada: 
+	 Saída:
+	 */
+    public function Animal ($nome, $descricao,$especie, $raca, $cor, $idade, $sexo, $id=0){
         $this->nome = $nome;
         $this->especie = $especie;
         $this->raca = $raca;
@@ -17,8 +19,16 @@ class Animal {
         $this->idade = $idade;
         $this->sexo = $sexo;
         $this->id = $id;
+        $this->descricao = $descricao;
     }
     
+    /*
+	 Descrição: Métodos para pegar as informações do BD.  
+	 Autora: Camila Camargo
+	 Horas: 
+	 Entrada: 
+	 Saída:
+	 */
     public function getNome(){
         return $this->nome;
     }
@@ -40,7 +50,17 @@ class Animal {
     public function getId(){
         return $this->id;
     }
+    public function getDescricao(){
+        return $this->descricao;
+    }
     
+    	/*
+	 Descrição: Método para fazer comparação das informações inseridas e não deixar enviar se as mais importantes forem vazias.
+	 Autora: Camila Camargo
+	 Horas: 
+	 Entrada: 
+	 Saída:
+	 */
     public function isValido(){
         return $this->especie != "" 
             && $this->raca != "" 
@@ -49,6 +69,13 @@ class Animal {
             && $this->sexo != "" ;
     }
     
+    	/*
+	 Descrição: Método que cria-se um array para receber varios animais.
+	 Autora: Camila Camargo
+	 Horas: 
+	 Entrada: 
+	 Saída:
+	 */
     public function toArray(){
         $aux = array();
         $aux["nome"] = $this->nome;
@@ -58,8 +85,17 @@ class Animal {
         $aux["idade"] = $this->idade;
         $aux["sexo"] = $this->sexo;
         $aux["id"] = $this->id;
+        $aux["descricao"] = $this->descricao;
         return $aux;
     }
+    
+    	/*
+	 Descrição: Método que pega o nome do banco para relacionar com o InsertDAO.
+	 Autora: Camila Camargo
+	 Horas: 
+	 Entrada: 
+	 Saída:
+	 */
     //NOME DA TABELA DO BANCO
     public function getClassName(){
         return "Cadastro";

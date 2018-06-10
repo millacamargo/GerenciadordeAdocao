@@ -12,7 +12,6 @@ class Register_Animal extends CI_Controller {
 	 */
 	public function showRegister()
 	{
-		
 		$dados = [
 			'options_especies' => $this->Especie_model->selectEspecie(),
 			'options_cores' => $this->Cor_model->selectCor(),
@@ -21,23 +20,9 @@ class Register_Animal extends CI_Controller {
 		];
 		$this->load->view('RegisterPet', $dados);
 	}
-	
-	/*
-	 Descrição:  
-	 Autora: Camila Camargo
-	 Horas: 1 minuto
-	 Entrada: 
-	 Saída:
-	 */
-	
-	public function sucesso()
-	{
-		$this->load->view('Sucesso');
-	}
-	
 
 	/*
-	 Descrição:  Função para pegar o que foi digitado e selecionado no form, em caso de sucesso recarregará a página de cadastro,
+	 Descrição:  Função para pegar o que foi digitado e selecionado no form, em caso de sucesso carregará a página de sucesso,
 	 caso contrário abrirá uma página de erro
 	 Autora: Camila Camargo
 	 Horas: 
@@ -47,18 +32,24 @@ class Register_Animal extends CI_Controller {
 		public function inserir(){
         require_once APPPATH."/models/Animal.php";
         $nome = $this->input->post("nome");
+        $descricao = $this->input->post("descricao");
         $especie = $this->input->post("especies");
         $raca = $this->input->post("racas");
         $cor = $this->input->post("cores");
         $idade = $this->input->post("idades");
         $sexo = $this->input->post("sexo");
-        $animal = new Animal($nome,$especie,$raca,$cor,$idade,$sexo);
+        $animal = new Animal($nome,$descricao,$especie,$raca,$cor,$idade,$sexo);
         if($animal->isValido()){
-            $this->load->model("insertdao");
-            $this->insertdao->insertObject($animal);
-            redirect('https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Register_Animal/sucesso',true);
+            $this->load->model("insertdaoPet");
+            $this->insertdaoPet->insertObject($animal);
+            $this->load->view('Sucesso');;
         }else{
             $this->load->view("Erro");
         }
+        
+        }
+        
     }
-}
+   
+       
+

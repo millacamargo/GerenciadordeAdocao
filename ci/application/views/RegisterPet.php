@@ -79,14 +79,15 @@
 							<div class="title text-center">
 								<h1 class="mb-20">Registre o animal</h1>
 						</div>
-					</div>						
+					</div>
 					<div class="row justify-content-center">
+
 						<form method="POST" action="https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Register_Animal/inserir" enctype="multipart/form-data" class="col-lg-3">
 						  <div class="form-row">
 						  	
 					  <div class="form-group">
 						    <h3 for="first-name">Nome</h3>
-						    <input type="text" name="nome" class="form-control" placeholder="Nome (opcional)">
+						    <input type="text" name="nome" class="form-control" placeholder="(Opcional)">
 						  </div>
 						  
 						  	<div class="single-element-widget mt-30 boxsearch">
@@ -132,12 +133,12 @@
 										</select>
 									</div>
 								</div>
-							<!--	<div class="single-element-widget mt-30 boxsearch">-->
-							<!--		<h3 class="col-12 mb-30">Insira uma foto</h3>-->
-							<!--		<div class="default-select" id="default-select">-->
-							<!--<input type="file" name="imagem" class="form-control-file"/>	-->
-							<!--</div>-->
-							<!--</div>-->
+								
+								  <div class="form-group">
+						    <h3 for="first-name">Mais Descrições</h3>
+						    <input type="text" name="descricao" class="form-control" placeholder="(Opcional)">
+						  </div>
+						 
 						  </div>							  
 						  <button type="submit" name="submit" class="primary-btn">Registrar</button>
 						</form>
