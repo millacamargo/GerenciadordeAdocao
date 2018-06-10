@@ -47,8 +47,9 @@
 				          <li><a href="about.html">Sobre nós</a></li>
 				          <li><a href="volunteer.html">Seja um voluntário</a></li>				          
 				          <li><a href="contact.html">Contato</a></li>
-                          <li><a href="register.html">Registre-se</a></li>
-                          <li><a href="login.html">Login</a></li>		              
+	              		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo,  <?= $primeironome ?></li>
+				          <li> <form method="POST" action="/ci/index.php/user/logout">
+                                <input type="submit" class="genric-btn primary small" value="Logout"/>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>

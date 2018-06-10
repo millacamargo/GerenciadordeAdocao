@@ -2,12 +2,12 @@
 	<html lang="zxx" class="no-js">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="<?= base_url();?>assets/img/fav.png">
 		<meta charset="UTF-8">
-		<title>Animal Shelter | Dashboard </title>
+		<title>Adote um animal</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!-- CSS -->
+			<!--CSS-->
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
@@ -18,50 +18,49 @@
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
 		</head>
 		<body>
+			<!--Inicio header-->
 			  <header id="header" id="home">
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/img/logo.png" alt="" title="" /></a>
+				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Home</a></li>
 				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/about">Sobre nós</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/voluntario/volunteer">Seja um voluntário</a></li>				          
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/contato/contact">Contato</a></li>
-				          <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo,  <?= $primeironome ?></li>
-				          <li> <form method="POST" action="/ci/index.php/user/logout">
-                                <input type="submit" class="genric-btn primary small" value="Logout"/>
-                          </form> </li>
+				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/volunteer">Seja um voluntário</a></li>				          
+				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/contact">Contato</a></li>
+                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register">Registre-se</a></li>
+                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login">Login</a></li>
 				        </ul>
-				      </nav><!-- Fim do menu -->		    		
+				      </nav><!-- Fim menu -->		    		
 			    	</div>
 			    </div>
-			  </header><!-- Fim do header -->
+			  </header><!-- Fim header -->
 
-			<!-- Inicio Banner -->
+			<!-- Inicio banner -->
 			<section class="banner-area relative" id="home">
 				<div class="container">
 					<div class="overlay overlay-bg"></div>
 					<div class="row fullscreen d-flex align-items-center justify-content-start">
 						<div class="banner-content col-lg-8 col-md-12">
 							<h1 class="text-uppercase">
-								Adote-nos, <br>
+								Adote-nos <br>
 								Precisamos da sua ajuda!		
 							</h1>
 							<p class="text-white sub-head">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp
 								or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
 							</p>
-							<a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/welcome/search" class="primary-btn header-btn text-uppercase">Encontre um pet para adoção</a>
+							<a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login" class="primary-btn header-btn text-uppercase">Encontre um pet para adoção</a>
 						</div>											
 					</div>
 				</div>
 			</section>
-			<!-- Fim da area de banner-->
+			<!-- Fim banner-->
 
-			<!-- Area de processo de doação -->
+			<!-- Inicio da area de processo -->
 			<section class="process-area section-gap">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
@@ -128,7 +127,7 @@
 					</div>
 				</div>	
 			</section>
-			<!-- Fim da area de processo de doação -->
+			<!-- Fim da area de processo -->
 
 			<!-- Inicio da area de voluntario -->
 			<section class="calltoaction-area section-gap relative">
@@ -141,14 +140,14 @@
 							Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
 						</p>
 						<div class="buttons d-flex flex-row">
-							<a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/welcome/volunteerlogado" class="primary-btn text-uppercase">Registre-se agora</a>
+							<a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/volunteer" class="primary-btn text-uppercase">Registre-se agora</a>
 						</div>
 					</div>
 				</div>	
 			</section>
 			<!-- Fim da area de voluntario -->
 			
-			<!-- Inicio do footer -->		
+			<!-- Inicio da area de footer -->		
 			<footer class="footer-area">
 				<div class="copyright-text">
 					<div class="container">
@@ -161,10 +160,9 @@
 					</div>
 				</div>
 			</footer>
-			<!-- Fim do footer -->	
-            
-            <!-- js -->
-			<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
+			<!-- Fim da area de footer -->	
+
+		    <script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
@@ -176,6 +174,6 @@
 			<script src="<?= base_url();?>assets/js/owl.carousel.min.js"></script>						
 			<script src="<?= base_url();?>assets/js/jquery.nice-select.min.js"></script>							
 			<script src="<?= base_url();?>assets/js/mail-script.js"></script>	
-			<script src="<?= base_url();?>assets/js/main.js"></script>	
+			<script src="<?= base_url();?>assets/js/main.js"></script>		
 		</body>
 	</html>

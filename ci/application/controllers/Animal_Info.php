@@ -44,6 +44,7 @@ class Animal_Info extends CI_Controller {
 		$data['results'] = $this->Results_model->getAll($data);
 		
 		$this->load->view('Save_Animal', $data);
+		
 	}
 	
 }
