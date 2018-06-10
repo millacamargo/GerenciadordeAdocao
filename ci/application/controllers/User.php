@@ -66,7 +66,7 @@ class User extends CI_Controller {
         //Validação de usuario, inicia uma session, abre a dash e pega o primeiro nome do usuario logado
         if ($email == "felipe@felipe.com" and $senha == "felipe"){
             $this->session->set_userdata("primeironome",$usuario->getPrimeiroNome());
-            redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Registrar_Animal/registerpet',true);
+            redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard',true);
         }elseif(isset($usuario)) {
             $this->session->set_userdata("primeironome",$usuario->getPrimeiroNome());
             redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard',true);
