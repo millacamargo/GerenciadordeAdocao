@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="shortcut icon" href="img/fav.png">
 		<meta charset="UTF-8">
-		<title>Adote um animal | ERRO </title>
+		<title>Adote um animal | Erro </title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--CSS -->
@@ -65,8 +65,8 @@
 								<h1 class="mb-20">Erro! Campos não preenchidos. <br> Não foi possível completar o registro.</h1>
 						</div>
 					</div>						
-					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">Cadastrar Outro Animal</button>
-					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Animal_Info/showPets';" class="primary-btn">Ir para a Tabela</button>
+					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">Cadastrar Outro Animal</button>
+					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets';" class="primary-btn">Ir para a Tabela</button>
                     </div>
                 </div>
                 </div>

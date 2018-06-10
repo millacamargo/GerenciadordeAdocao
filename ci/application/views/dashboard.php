@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="shortcut icon" href="img/fav.png">
 		<meta charset="UTF-8">
-		<title>Animal Shelter | Dashboard </title>
+		<title>Adote um animal | Dashboard </title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!-- CSS -->
@@ -22,14 +22,14 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/img/logo.png" alt="" title="" /></a>
+				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Home</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/about">Sobre nós</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/voluntario/volunteer">Seja um voluntário</a></li>				          
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/contato/contact">Contato</a></li>
+				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard">Home</a></li>
+				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/sobrelog">Sobre nós</a></li>
+				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/voluntariolog">Seja um voluntário</a></li>				          
+				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/contatolog">Contato</a></li>
 				          <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo,  <?= $primeironome ?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
@@ -54,7 +54,7 @@
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp
 								or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
 							</p>
-							<a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/welcome/search" class="primary-btn header-btn text-uppercase">Encontre um pet para adoção</a>
+							<a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Results/showResults" class="primary-btn header-btn text-uppercase">Encontre um pet para adoção</a>
 						</div>											
 					</div>
 				</div>

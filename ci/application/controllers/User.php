@@ -44,13 +44,14 @@ class User extends CI_Controller {
             $this->load->view("erro");
         }
     }
-    //Função para abrir a pagina de sucesso
+    //Função para abrir a pagina de sucesso caso o cadastro seja efetuado com sucesso
     public function sucesso(){
         $this->load->view("success");
-        header("Refresh: 4;url=https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register");
+        header("Refresh: 4;url=https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login");
     }
     
     //Função para autenticar-se e iniciar uma sessão
+    //AUTENTICAÇÃO
 	public function autenticar(){
         $email = $this->input->post("email");
         $senha = $this->input->post("password");
@@ -76,7 +77,7 @@ class User extends CI_Controller {
         redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index',true);
     }
         //Função para abrir a página principal do site se o usuario estiver logado, caso contrario retorna para a página de login
-        //
+        //AUTORIZAÇÃO
 	 public function dashboard(){
         $data["primeironome"] = $this->session->userdata("primeironome");
         if(isset($data["primeironome"])){

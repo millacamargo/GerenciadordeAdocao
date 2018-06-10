@@ -31,8 +31,8 @@
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Home</a></li>
 				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/about">Sobre nós</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/voluntario/volunteer">Seja um voluntário</a></li>				          
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/contato/contact">Contato</a></li>
+				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/volunteer">Seja um voluntário</a></li>				          
+				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/contact">Contato</a></li>
                           <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register">Registre-se</a></li>
                           <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login">Login</a></li>				              
 				        </ul>

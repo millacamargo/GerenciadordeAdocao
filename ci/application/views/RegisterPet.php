@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
-		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
 		<link rel="shortcut icon" href="<?= base_url();?>assets/img/logo.png">
-		<!-- Author Meta -->
-		<meta name="author" content="codepixer">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
 		<meta charset="UTF-8">
-		<!-- Site Title -->
 		<title>Adote um animal | Registro de animais</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
+			<!--CSS-->
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
@@ -39,17 +27,14 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="<?= base_url();?>assets/img/logo.png" alt="Logo do Abrigo" title="" /></a>
+				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets"><img src="<?= base_url();?>assets/img/logo.png" alt="Logo do Abrigo" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Home</a></li>
-				          <li><a href="about.html">Sobre nós</a></li>
-				          <li><a href="volunteer.html">Seja um voluntário</a></li>				          
-				          <li><a href="contact.html">Contato</a></li>
-	              		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo,  <?= $primeironome ?></li>
-				          <li> <form method="POST" action="/ci/index.php/user/logout">
-                                <input type="submit" class="genric-btn primary small" value="Logout"/>
+				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home</a></li>
+	              		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo, ADM</li>
+				          <!--<li> <form method="POST" action="/ci/index.php/user/logout">
+                                <input type="submit" class="genric-btn primary small" value="Logout"/>-->
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -65,7 +50,7 @@
 							<h1 class="text-white">
 								Registro de Animais	
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Register_Animal/showRegister">Registro de animais</a></p>
+							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Register_Animal/showRegister">Registro de animais</a></p>
 						</div>	
 					</div>
 				</div>
@@ -83,7 +68,7 @@
 					</div>
 					<div class="row justify-content-center">
 
-						<form method="POST" action="https://gerenciadordeadocao-camilacamargo98.c9users.io/ci/index.php/Register_Animal/inserir" enctype="multipart/form-data" class="col-lg-3">
+						<form method="POST" action="/ci/index.php/Register_Animal/inserir" enctype="multipart/form-data" class="col-lg-3">
 						  <div class="form-row">
 						  	
 					  <div class="form-group">
