@@ -7,10 +7,11 @@ class Adotado {
     /*
 	 Descrição: Construtor para os objetos do BD.
 	 Autora: Camila Camargo
-	 Horas: 
-	 Entrada: 
-	 Saída:
-	 */
+	 Horas: 5 minutos.
+	 Entrada: Dados dos animais e dos usuários que pretendem adotá-los.
+	 Saída: não possui valor de retorno, porque você não pode chamar um construtor para um objeto,
+	 você só usa o construtor no momento da inicialização do objeto. 
+	*/
     public function Adotado ($nome, $especie, $raca, $primeironome, $email, $id=0){
         $this->nome = $nome;
         $this->especie = $especie;
@@ -21,12 +22,12 @@ class Adotado {
     }
     
     /*
-	 Descrição: Métodos para pegar as informações do BD.  
+	 Descrição: Métodos para pegar as informações do BD através do que foi declarado no construtor.  
 	 Autora: Camila Camargo
-	 Horas: 
-	 Entrada: 
-	 Saída:
-	 */
+	 Horas: 5 minutos
+	 Entrada: Pega os atributos privados declarados na classe.
+	 Saída: Retorna os atributos.
+	*/
     public function getNome(){
         return $this->nome;
     }
@@ -46,13 +47,13 @@ class Adotado {
         return $this->id;
     }
     
-    	/*
+    /*
 	 Descrição: Método para fazer comparação das informações inseridas e não deixar enviar se as mais importantes forem vazias.
 	 Autora: Camila Camargo
-	 Horas: 
-	 Entrada: 
-	 Saída:
-	 */
+	 Horas: 5 minutos.
+	 Entrada: Pega o que retornou do método get.
+	 Saída: se for diferente de nulo permite a inserção no BD senão dá erro.
+	*/
     public function isValido(){
         return $this->especie != "" 
             && $this->raca != "" 
@@ -60,13 +61,13 @@ class Adotado {
             && $this->email != "";
     }
     
-    	/*
+    /*
 	 Descrição: Método que cria-se um array para receber varias informações de requisição.
 	 Autora: Camila Camargo
-	 Horas: 
-	 Entrada: 
-	 Saída:
-	 */
+	 Horas: 5 minutos.
+	 Entrada: Os atributos retornados pelo método get.
+	 Saída: Array desses atributos inseridos.
+	*/
     public function toArray(){
         $aux = array();
         $aux["nome"] = $this->nome;
@@ -78,17 +79,15 @@ class Adotado {
         return $aux;
     }
     
-    	/*
-	 Descrição: Método que pega o nome do banco para relacionar com o InsertDAO.
+    /*
+	 Descrição: Método que pega o nome da tabela do banco para relacionar com o InsertDAO.
 	 Autora: Camila Camargo
-	 Horas: 
+	 Horas: 5 minutos
 	 Entrada: 
 	 Saída:
-	 */
-    //NOME DA TABELA DO BANCO
+	*/
     public function getClassName(){
         return "Requisitados";
     }
-    
 }
 ?>

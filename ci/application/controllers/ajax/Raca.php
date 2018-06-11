@@ -18,6 +18,5 @@
             
             echo $this->Raca_model->selectRacas($id_especie);
         }
-        
     }
 ?>

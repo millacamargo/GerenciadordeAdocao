@@ -7,13 +7,13 @@ class Raca_model extends CI_model{
         parent::__construct();
     }
     
-     /**
-	 Descrição: Traz todas as cidades da especie informada.
+    /*
+	 Descrição: Traz todas as raças da especie informada.
 	 Autora: Camila Camargo
 	 Horas: 2 horas
-	 Entrada: 
-	 Saída:
-	 */
+	 Entrada: Dados da tabela Raça do BD.
+	 Saída: Retorna os dados para o próximo método poder inserir ao select do html.
+	*/
     public function getRacasByIdEspecie($id_especie = null){
         return $this->db
         ->where("especie", $id_especie)
@@ -21,13 +21,13 @@ class Raca_model extends CI_model{
         ->get('Raca');
     }
     
-    /**
+    /*
 	 Descrição: Monta um select com as raças selecionadas da espécie.
 	 Autora: Camila Camargo
-	 Horas: 10 horas, se contar os 3 dias separados que trabalhei nas soluções
-	 Entrada: 
-	 Saída:
-	 */
+	 Horas: 10 horas, se contar os 3 dias separados que trabalhei na solução disso.
+	 Entrada: Dados do getRacasByEspecie que vem da tabela Raça do BD.
+	 Saída: Options com o dado raça do BD para poder aparecer dentro do select do html através do Ajax.
+	*/
     public function selectRacas($id_especie = null){
         
         $racas = $this->getRacasByIdEspecie($id_especie);
@@ -40,10 +40,5 @@ class Raca_model extends CI_model{
         
         return $options;
     }
-
-    
 }
-
-
-
 ?>

@@ -32,3 +32,4 @@ class LoginDAO extends CI_Model {
             }
     }
 }
+?>

@@ -32,9 +32,11 @@
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home</a></li>
-	              		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo, ADM</li>
+	              		  <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
+	              		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a),  <?= $primeironome ?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
-                                <input type="submit" class="genric-btn primary small" value="Logout"/></form>
+                                <input type="submit" class="genric-btn primary small" value="Logout"/>
+                          </form> </li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -68,9 +70,8 @@
 					</div>
 					<div class="row justify-content-center">
 
-						<form method="POST" action="/ci/index.php/Register_Animal/inserir" class="col-lg-3">
+						<form method="POST" action="/ci/index.php/Register_Animal/inserir" enctype="multipart/form-data" class="col-lg-3">
 						  <div class="form-row">
-						  	
 					  <div class="form-group">
 						    <h3 for="first-name">Nome</h3>
 						    <input type="text" name="nome" class="form-control" placeholder="(Opcional)">
@@ -80,11 +81,10 @@
 									<h3 class="col-12 mb-30" for="especies">Espécie</h3>
 									<div class="default-select" id="default-select">
 										<select id="especies" name="especies" class="form-control">
-										    <?php echo $options_especies; ?>
+										    <?php echo $dados['options_especies']; ?>
 										</select>
 									</div>
 							</div>
-							
 							<div class="single-element-widget mt-30 boxsearch">
 									<h3 class="col-12 mb-30" for="racas">Raça</h3>
 									<div class="default-select" id="default-select">
@@ -98,16 +98,15 @@
 									<h3 class="col-12 mb-30" for="cores">Cor</h3>
 									<div class="default-select" id="default-select" >
 										<select id="cores" name="cores" class="form-control">
-										    <?php echo $options_cores; ?>
+										    <?php echo $dados['options_cores']; ?>
 										</select>
 									</div>
 								</div>
-                            
                             <div class="single-element-widget mt-30 boxsearch">
 									<h3 class="col-12 mb-30" for="idades">Idade</h3>
 									<div class="default-select" id="default-select">
 										<select id="idades" name="idades" class="form-control">
-										    <?php echo $options_idades; ?>
+										    <?php echo $dados['options_idades']; ?>
 										</select>
 									</div>
 								</div>
@@ -115,7 +114,7 @@
 									<h3 class="col-12 mb-30" for"sexo">Sexo</h3>
 									<div class="default-select" id="default-select">
 										<select id"sexo" name="sexo" class="form-control">
-										    <?php echo $options_sexos; ?>
+										    <?php echo $dados['options_sexos']; ?>
 										</select>
 									</div>
 								</div>
@@ -125,7 +124,12 @@
 						    <input type="text" name="descricao" class="form-control" placeholder="(Opcional)">
 						  </div>
 						 
-						  </div>							  
+						  </div>			
+						   <div class="form-group">
+						    <h3 for="foto">Foto</h3>
+						    <input type="file" name="foto" class="form-control" placeholder="(Opcional)">
+						  </div>
+						  
 						  <button type="submit" name="submit" class="primary-btn">Registrar</button>
 						</form>
 					

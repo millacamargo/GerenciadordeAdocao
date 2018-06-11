@@ -10,3 +10,4 @@ class InsertDAO extends CI_Model {
         $this->db->insert($obj->getClassName(), $obj->toArray());
     }    
 }
+?>

@@ -7,12 +7,12 @@ class Required_model extends CI_model {
     }
     
 	/*
-	 Descrição:  
+	 Descrição: Seleciona os dados da tabela Requisitados do BD para montar o array chamado na controller Required_Animal.
 	 Autora: Camila Camargo
-	 Horas: 
-	 Entrada: 
-	 Saída:
-	 */
+	 Horas: 5 minutos.
+	 Entrada: Dados da tabela Requisitados.
+	 Saída: Um array com esses dados na ordem escolhida também na controller Required_Animal.
+	*/
 	 
 	public function getAll($params){
         $this->db->select($params['fields']);
@@ -23,3 +23,4 @@ class Required_model extends CI_model {
     }
     
 }
+?>

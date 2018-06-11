@@ -22,15 +22,15 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/welcome/dashboard"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
+				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/User/dashboard"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard">Home</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/sobrelog">Sobre nós</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/voluntariolog">Seja um voluntário</a></li>				          
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/contatolog">Contato</a></li>
-				          <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo,  <?= $primeironome ?></li>
+				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/User/dashboard">Home</a></li>
+				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/sobrelog">Sobre nós</a></li>
+				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/voluntariolog">Seja um voluntário</a></li>				          
+				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/contatolog">Contato</a></li>
+				          <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a),  <?= $primeironome ?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
                           </form> </li>
@@ -49,7 +49,7 @@
 							<h1 class="text-white">
 								Sobre nós			
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.html"> Sobre nós</a></p>
+							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/User/dashboard">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/sobrelog"> Sobre nós</a></p>
 						</div>	
 					</div>
 				</div>
