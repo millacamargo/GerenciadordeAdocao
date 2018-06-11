@@ -89,7 +89,7 @@
 						    <input type="text" class="form-control" placeholder="Sobrenome">
 						  </div>						  
 						  <div class="form-group">
-						    <label name="addressVol">Endereço</label>
+						    <label name="enderVol">Endereço</label>
 						    <input type="text" class="form-control mb-20" placeholder="Endereço">
 						  </div>						  
 						  <div class="form-row">
