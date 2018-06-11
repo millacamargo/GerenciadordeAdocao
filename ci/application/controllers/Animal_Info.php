@@ -35,7 +35,6 @@ class Animal_Info extends CI_Controller {
 			'cor',
 			'idade',
 			'sexo'
-		
 			);
 
 		$data['order'] = 'nome';
@@ -43,7 +42,13 @@ class Animal_Info extends CI_Controller {
 		// processo de pegar os dados do BD
 		$data['results'] = $this->Results_model->getAll($data);
 		
-		$this->load->view('Save_Animal', $data);
+		$data['primeironome'] = $this->session->userdata("primeironome");
+        if(isset($data['primeironome'])){
+            $this->load->view("Save_Animal",$data);
+        }else{
+            $this->session->set_userdata("msgErro","Você precisa estar logado!");
+            redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login',true);
+        }
 		
 	}
 	

@@ -22,6 +22,12 @@ class Results_model extends CI_model {
         return $query->result_array();
     }
     
+    public function getResultById($params){
+        $query = $this->db->get_where('Cadastro', $params['conditions'])->row();
+        
+        return $query;
+    }
+    
     /*
 	 Descrição:  
 	 Autora: Camila Camargo

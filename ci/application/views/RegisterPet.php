@@ -33,8 +33,8 @@
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home</a></li>
 	              		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo, ADM</li>
-				          <!--<li> <form method="POST" action="/ci/index.php/user/logout">
-                                <input type="submit" class="genric-btn primary small" value="Logout"/>-->
+				          <li> <form method="POST" action="/ci/index.php/user/logout">
+                                <input type="submit" class="genric-btn primary small" value="Logout"/></form>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -68,7 +68,7 @@
 					</div>
 					<div class="row justify-content-center">
 
-						<form method="POST" action="/ci/index.php/Register_Animal/inserir" enctype="multipart/form-data" class="col-lg-3">
+						<form method="POST" action="/ci/index.php/Register_Animal/inserir" class="col-lg-3">
 						  <div class="form-row">
 						  	
 					  <div class="form-group">

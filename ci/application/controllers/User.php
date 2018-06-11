@@ -59,10 +59,10 @@ class User extends CI_Controller {
         $usuario = $this->logindao->getUser($email,$senha);
         //Validação de usuario, inicia uma session, abre a dash e pega o primeiro nome do usuario logado
         if ($email == "felipe@felipe.com" and $senha == "felipe"){
-            $this->session->set_userdata("primeironome",$usuario->getPrimeiroNome());
+            $this->session->set_userdata(array("primeironome" => $usuario->getPrimeiroNome(), 'email' => $usuario->getEmail()));
             redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets',true);
         }elseif(isset($usuario)) {
-            $this->session->set_userdata("primeironome",$usuario->getPrimeiroNome());
+            $this->session->set_userdata(array("primeironome" => $usuario->getPrimeiroNome(), 'email' => $usuario->getEmail()));
             redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard',true);
         }else{
         //Se ocorrer algum problema com usuario ou senha 

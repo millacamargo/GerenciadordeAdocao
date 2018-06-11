@@ -1,8 +1,8 @@
 <?php
 
-class Animal {
+class Adotado {
     
-    private $nome, $descricao, $especie, $raca, $cor, $idade, $sexo, $id;
+    private $nome, $especie, $raca, $primeironome, $email, $id;
     
     /*
 	 Descrição: Construtor para os objetos do BD.
@@ -11,15 +11,13 @@ class Animal {
 	 Entrada: 
 	 Saída:
 	 */
-    public function Animal ($nome, $descricao,$especie, $raca, $cor, $idade, $sexo, $id=0){
+    public function Adotado ($nome, $especie, $raca, $primeironome, $email, $id=0){
         $this->nome = $nome;
         $this->especie = $especie;
         $this->raca = $raca;
-        $this->cor = $cor;
-        $this->idade = $idade;
-        $this->sexo = $sexo;
+        $this->primeironome = $primeironome;
+        $this->email = $email;
         $this->id = $id;
-        $this->descricao = $descricao;
     }
     
     /*
@@ -38,20 +36,14 @@ class Animal {
     public function getRaca(){
         return $this->raca;
     }
-    public function getCor(){
-        return $this->cor;
+    public function getPrimeiroNome(){
+        return $this->primeironome;
     }
-    public function getIdade(){
-        return $this->idade;
-    }
-    public function getSexo(){
-        return $this->sexo;
+    public function getEmail(){
+        return $this->email;
     }
     public function getId(){
         return $this->id;
-    }
-    public function getDescricao(){
-        return $this->descricao;
     }
     
     	/*
@@ -64,13 +56,12 @@ class Animal {
     public function isValido(){
         return $this->especie != "" 
             && $this->raca != "" 
-            && $this->cor != "" 
-            && $this->idade != "" 
-            && $this->sexo != "" ;
+            && $this->primeironome != "" 
+            && $this->email != "";
     }
     
     	/*
-	 Descrição: Método que cria-se um array para receber varios animais.
+	 Descrição: Método que cria-se um array para receber varias informações de requisição.
 	 Autora: Camila Camargo
 	 Horas: 
 	 Entrada: 
@@ -81,11 +72,9 @@ class Animal {
         $aux["nome"] = $this->nome;
         $aux["especie"] = $this->especie;
         $aux["raca"] = $this->raca;
-        $aux["cor"] = $this->cor;
-        $aux["idade"] = $this->idade;
-        $aux["sexo"] = $this->sexo;
+        $aux["primeironome"] = $this->primeironome;
+        $aux["email"] = $this->email;
         $aux["id"] = $this->id;
-        $aux["descricao"] = $this->descricao;
         return $aux;
     }
     
@@ -98,7 +87,8 @@ class Animal {
 	 */
     //NOME DA TABELA DO BANCO
     public function getClassName(){
-        return "Cadastro";
+        return "Requisitados";
     }
+    
 }
 ?>

@@ -40,7 +40,7 @@
 				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/contatolog">Contato</a></li>
 				          <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo</li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
-                                <input type="submit" class="genric-btn primary small" value="Logout"/></form>
+                                <input type="submit" class="genric-btn primary small" value="Logout"/>
 			              
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
@@ -55,9 +55,9 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Busca de Animais
+								Animais Requisitados
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Animal_Results/showResults">Busca de Animais</a></p>
+							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Required_Animals/showRequired">Animais Requisitados</a></p>
 						</div>	
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 			
             <div class="whole-wrap">
 				<div class="container">
-                    	<h2>Animais em Adoção</h2>
+                    	<h2>Animais Requisitados</h2>
                     <div class="table-responsive">
                     	<table class="table">
     					<thead>
@@ -74,25 +74,21 @@
     						<th>Nome</th>
     						<th>Espécie</th>
     						<th>Raça</th>
-    						<th>Cor</th>
-    						<th>Idade</th>
-    						<th>Sexo</th>
-    						<th>Mais Descrições</th>
-    						<th></th>
+    						<th>Nome Usuário</th>
+    						<th>E-mail</th>
+    						<th>Data da requisição</th>
     						</tr>
     					</thead>
     					<tbody>
-    					<?php foreach ($results as $animal){ ?>
+    					<?php foreach ($results as $info){ ?>
 					     	<tr>
-					        	<td><?php echo $animal['nome']; ?></td>
-					        	<td><?php echo $animal['especie'];?></td>
-					        	<td><?php echo $animal['raca'];?></td>
-					        	<td><?php echo $animal['cor'];?></td>
-					        	<td><?php echo $animal['idade'];?></td>
-					        	<td><?php echo $animal['sexo'];?></td>
-					        	<td><?php echo $animal['descricao'];?></td>
-					        	<td><a type="submit" href='<?= "https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Results/inserir/" . $animal['id'] ?>'
-					        	name="submit" class="primary-btn">Adotar</a></td>
+					            <td><?php echo $info['nome']; ?></td>
+					        	<td><?php echo $info['especie'];?></td>
+					        	<td><?php echo $info['raca'];?></td>
+					        	<td><?php echo $info['primeironome'];?></td>
+					        	<td><?php echo $info['email'];?></td>
+					        	<td><?php echo $info['dt_requisicao'];?></td>
+					        	<!--<td><button type="submit" name="submit" class="primary-btn">Adotar</button></td>-->
 					      	</tr>
       					<?php } ?>
     					</tbody>

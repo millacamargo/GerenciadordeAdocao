@@ -33,9 +33,9 @@
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home</a></li>
-	              		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo, ADM</li>
-				         <!-- <li> <form method="POST" action="/ci/index.php/user/logout">
-                                <input type="submit" class="genric-btn primary small" value="Logout"/>	-->		              
+	              		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo, <?= $primeironome ?></li>
+				          <li> <form method="POST" action="/ci/index.php/user/logout">
+                                <input type="submit" class="genric-btn primary small" value="Logout"/></form>	              
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
