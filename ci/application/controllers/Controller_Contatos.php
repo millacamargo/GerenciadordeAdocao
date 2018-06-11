@@ -42,7 +42,16 @@ class Controller_Contatos extends CI_Controller {
 			E-mail: ' .$email. '
 			Assunto: ' .$assunto. '
 			Mensagem: ' .$msg. ' ';
+	
+	
+	$mail = new PHPMailer();
+	 
+	$mail->IsSMTP();
+	$mail->SMTPAuth  = true;
+	$mail->Charset   = 'utf8_decode()';
+	$mail->Host  = 'smtp.'.substr(strstr($caixaPostalServidorEmail, '@'), 1);
+	$mail->Port  = '587';
+	$mail->IsHTML(true);
+
 	}
-	
-	
 }
