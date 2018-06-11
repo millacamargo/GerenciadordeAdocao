@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="<?= base_url();?>assets/img/logo.png">
 		<!-- Author Meta -->
 		<meta name="author" content="codepixer">
 		<!-- Meta Description -->
@@ -20,14 +20,14 @@
 			<!--
 			CSS
 			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">							
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/magnific-popup.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/nice-select.css">							
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
 		</head>
 		<body>	
 			  <header id="header" id="home">
@@ -71,7 +71,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
-							<form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
+							<form class="form-area " action="<?=base_url()?>index.php/Controller_Contatos/postEmail" method="POST" id="myForm"  class="contact-form text-right">
 								<div class="row">	
 									<div class="col-lg-6 form-group">
 										<input name="name" placeholder="Nome" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome'" class="common-input mb-20 form-control" required="" type="text">
@@ -85,7 +85,7 @@
 									</div>
 									<div class="col-lg-12 d-flex justify-content-between">
 										<div class="alert-msg" style="text-align: left;"></div>
-										<button class="genric-btn primary circle" style="float: right;">Enviar</button>		
+										<button class="genric-btn primary circle" style="float: right;" type="submit" value="Enviar">Enviar</button>		
 									</div>
 								</div>
 							</form>	
@@ -112,20 +112,20 @@
 			</footer>
 			<!-- End footer Area -->	
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>	
-			<script src="js/owl.carousel.min.js"></script>						
-			<script src="js/jquery.nice-select.min.js"></script>							
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
-		</body>
+  			<script src="<?= base_url();?>assets/js/easing.min.js"></script>			
+			<script src="<?= base_url();?>assets/js/hoverIntent.js"></script>
+			<script src="<?= base_url();?>assets/js/superfish.min.js"></script>	
+			<script src="<?= base_url();?>assets/js/jquery.ajaxchimp.min.js"></script>
+			<script src="<?= base_url();?>assets/js/jquery.magnific-popup.min.js"></script>	
+			<script src="<?= base_url();?>assets/js/owl.carousel.min.js"></script>						
+			<script src="<?= base_url();?>assets/js/jquery.nice-select.min.js"></script>							
+			<script src="<?= base_url();?>assets/js/mail-script.js"></script>	
+			<script src="<?= base_url();?>assets/js/main.js"></script>
 	</html>
-	
+
+
 	
