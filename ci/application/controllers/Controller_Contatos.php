@@ -34,6 +34,15 @@ class Controller_Contatos extends CI_Controller {
 	$msg = $_POST['message'];
 	$caixaPostalServidorNome = 'WebSite | Formulário';
 	
-}
+	$headers = "From ". $nome;
+	
+	$corpoemail = 'Fale Conosco - Adotando um Animal
+			
+			Nome: ' .$nome. '
+			E-mail: ' .$email. '
+			Assunto: ' .$assunto. '
+			Mensagem: ' .$msg. ' ';
+	}
+	
 	
 }
