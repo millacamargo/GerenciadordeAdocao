@@ -53,5 +53,14 @@ class Controller_Contatos extends CI_Controller {
 	$mail->Port  = '587';
 	$mail->IsHTML(true);
 
+		if(mail('lhvm97@gmail.com', $corpoemail, $headers)){
+		
+			echo "<script>alert('Mensagem enviada com sucesso!'); </script> ";
+		
+				}else{
+		
+			echo "<script>alert('Erro ao enviar'); </script> ";
+		}
 	}
+
 }
