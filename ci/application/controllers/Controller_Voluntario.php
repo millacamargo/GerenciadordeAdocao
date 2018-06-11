@@ -24,9 +24,9 @@ public function index(){
         if($volunteer->isValido()){
             $this->load->model("insertdaoVol");
             $this->insertdaoVol->insertObject($volunteer);
-            $this->load->view('Sucesso');
+            $this->load->view('SucessoVol');
         }else{
-            $this->load->view("Erro");
+            $this->load->view("ErroVol");
         }
     }
 	

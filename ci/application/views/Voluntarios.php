@@ -79,7 +79,7 @@
 						</div>
 					</div>						
 					<div class="row justify-content-center">
-						<form class="col-lg-9" method="POST" action="<?=base_url()?>index.php/Controller_Voluntario/index">
+						<form class="col-lg-9" method="POST" action="<?=base_url()?>index.php/Controller_Voluntario/inserir">
 						  <div class="form-group">
 						    <label name="firstName">Primeiro Nome</label>
 						    <input type="text" class="form-control" placeholder="Primeiro Nome">
