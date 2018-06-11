@@ -21,6 +21,16 @@ class Controller_Voluntario extends CI_Controller{
 		$sobreVol = NULL;
 		$submit = NULL;
 		
+		extract($_POST);
+		
+		$_POST['firstName'] = $firstName;
+		$_POST['lastName'] = $lastName;
+		$_POST['addressVol'] = $addressVol;
+		$_POST['cidadeVol'] = $cidadeVol;
+		$_POST['cepVol'] = $cepVol;
+		$_POST['celVol'] = $celVol;
+		$_POST['diasDisp'] = $diasDisp;
+		$_POST['submit'] = $submit;
 	
 		$this->load->view("Voluntarios");
 

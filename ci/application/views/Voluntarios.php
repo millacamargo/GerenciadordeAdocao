@@ -79,22 +79,22 @@
 						</div>
 					</div>						
 					<div class="row justify-content-center">
-						<form class="col-lg-9">
+						<form class="col-lg-9" method="POST">
 						  <div class="form-group">
-						    <label name="first-name">Primeiro Nome</label>
+						    <label name="firstName">Primeiro Nome</label>
 						    <input type="text" class="form-control" placeholder="Primeiro Nome">
 						  </div>
 						  <div class="form-group">
-						    <label name="last-name">Sobrenome</label>
+						    <label name="lastName">Sobrenome</label>
 						    <input type="text" class="form-control" placeholder="Sobrenome">
 						  </div>						  
 						  <div class="form-group">
-						    <label name="Address">Endereço</label>
+						    <label name="addressVol">Endereço</label>
 						    <input type="text" class="form-control mb-20" placeholder="Endereço">
 						  </div>						  
 						  <div class="form-row">
 						  	<div class="col-6 mb-30">
-						  		<label name="City">Cidade</label>
+						  		<label name="cidadeVol">Cidade</label>
 						   		<div class="select-option" id="service-select">
 									<select>
 										<option data-display="Selecione a cidade">Selecione a cidade</option>
@@ -111,21 +111,21 @@
 								</div>	
 						  	</div>
 						  	<div class="col-6 mb-30">
-						  		<label name="postal-code">CEP</label>
+						  		<label name="cepVol">CEP</label>
 						   		<input type="text" class="form-control" placeholder="CEP">						  		
 						  	</div>						  	
 						  	<div class="col-6 mb-30">
-						  		<label name="email">E-mail</label>
+						  		<label name="emailVol">E-mail</label>
 						   		<input type="email" class="form-control" placeholder="E-mail">
 						  	</div>
 						  	<div class="col-6 mb-30">
-						  		<label name="phone">Número de telefone</label>
+						  		<label name="celVol">Número de telefone</label>
 						   		<input type="phone" class="form-control" placeholder="Número de telefone">
 						  	</div>
 						  </div>		
 
 						  <fieldset class="form-group">
-							<label name="day">Quais dias você pode ser voluntário?</label>
+							<label name="diasDisp">Quais dias você pode ser voluntário?</label>
                             <div class="form-group ">
                                 <div class="form-check form-check-inline">
                                     <label class="form-check-label">
@@ -165,7 +165,7 @@
                             </div>
 						  </fieldset>
 						  <div class="form-group">
-						    <label name="note">Fale sobre você</label>
+						    <label name="sobreVol">Fale sobre você</label>
 						    <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Fale sobre você"></textarea>
 						  </div>						  
 						  <button type="submit" class="primary-btn float-right">Enviar</button>
