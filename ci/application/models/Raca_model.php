@@ -2,8 +2,8 @@
 
 class Raca_model extends CI_model{
     
-    
-     public function __construct(){
+    // o parent::__construct() chama o construct do CI_model, pois quando criamos um construct numa model que extende esta sobrescrevemos o original.    
+    public function __construct(){
         parent::__construct();
     }
     

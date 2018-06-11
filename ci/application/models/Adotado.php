@@ -83,8 +83,8 @@ class Adotado {
 	 Descrição: Método que pega o nome da tabela do banco para relacionar com o InsertDAO.
 	 Autora: Camila Camargo
 	 Horas: 5 minutos
-	 Entrada: 
-	 Saída:
+	 Entrada: Dados do animal e do usuário.
+	 Saída: Inserção na tabela Adotado.
 	*/
     public function getClassName(){
         return "Requisitados";

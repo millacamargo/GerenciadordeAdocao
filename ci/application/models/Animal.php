@@ -96,8 +96,8 @@ class Animal {
 	 Descrição: Método que pega o nome da tabela do banco para relacionar com o InsertDAO.
 	 Autora: Camila Camargo
 	 Horas: 5 minutos
-	 Entrada: 
-	 Saída:
+	 Entrada: Dados do animal.
+	 Saída: Inserção na tabela Cadastro.
 	*/
     public function getClassName(){
         return "Cadastro";
