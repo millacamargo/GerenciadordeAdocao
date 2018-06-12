@@ -7,6 +7,15 @@ class VolunteerResults extends CI_model {
         parent::__construct();
     }
 	 
+	 /*
+	 Descrição: Insere com um array, na ordem solicitada, as informações inseridas pelo usuário e as joga no banco de dados.
+	 Autora: Luiza Vasconcelos
+	 Horas: Uma tarde 
+	 Entrada: Dados dos voluntarios que estão no BD puxadas pelas respectivas models.
+	 Saída: Os dados do voluntario em forma de array.
+	*/
+	 
+	 
 	public function getAll($params){
         $this->db->select($params['fields']);
         $this->db->order_by($params['order']);

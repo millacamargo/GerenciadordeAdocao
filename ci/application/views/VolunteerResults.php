@@ -51,9 +51,9 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Animais Registrados
+								Voluntários Registrados
 							</h1>	
-							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Animal_Info/showPets">Animais Registrados</a></p>
+							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Animal_Info/showPets">Voluntários Registrados</a></p>
 						</div>	
 					</div>
 				</div>
@@ -62,33 +62,34 @@
 			
             <div class="whole-wrap">
 				<div class="container">
-                    	<h2>Animais em Adoção</h2>
-                    	<button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">+ Novo Animal</button>
-                    	<form method="POST" action="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">
-                    <button type="submit" name="delete" value="delete" class="primary-btn" onclick="return confirm('Deseja realmente excluir o animal?');">Remover</button>
+                    	<h2>Pessoas que Desejam ser Voluntárias</h2>
+                    	
   					<table class="table">
     					<thead>
      						 <tr>
-     						 	<th>Selecionar</th>
 						        <th>Nome</th>
-						        <th>Especie</th>
-						        <th>Raça</th>
-						        <th>Cor</th>
-						        <th>Idade</th>
-						        <th>Sexo</th>
-						        <th></th>
+						        <th>Sobrenome</th>
+						        <th>Endereço</th>
+						        <th>Cidade</th>
+						        <th>CEP</th>
+						        <th>Email</th>
+						        <th>Telefone</th>
+						        <th>Dias Disponíveis</th>
+						        <th>Sobre o Voluntário</th>
       						</tr>
     					</thead>
     					<tbody>
-    					<?php foreach ($results as $animal){ ?>
+    					<?php foreach ($results as $volunteer){ ?>
 					     	<tr>
-					     		<td><input type="checkbox" name="animal_id[]" value="<?php echo $animal['id']?>"/></td>
-					        	<td name="nome"><?php echo $animal['nome']; ?></td>
-					        	<td><?php echo $animal['especie'];?></td>
-					        	<td><?php echo $animal['raca'];?></td>
-					        	<td><?php echo $animal['cor'];?></td>
-					        	<td><?php echo $animal['idade'];?></td>
-					        	<td><?php echo $animal['sexo'];?></td>
+					        	<td><?php echo $volunteer['firstName']; ?></td>
+					        	<td><?php echo $volunteer['lastName'];?></td>
+					        	<td><?php echo $volunteer['enderVol'];?></td>
+					        	<td><?php echo $volunteer['cidadeVol'];?></td>
+					        	<td><?php echo $volunteer['cepVol'];?></td>
+					        	<td><?php echo $volunteer['emailVol'];?></td>
+					        	<td><?php echo $volunteer['celVol'];?></td>
+					        	<td><?php echo $volunteer['diasDisp'];?></td>
+					        	<td><?php echo $volunteer['sobreVol'];?></td>
 					      	</tr>
       					<?php } ?>
     					</tbody>

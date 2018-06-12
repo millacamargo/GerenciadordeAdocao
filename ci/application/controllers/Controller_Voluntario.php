@@ -14,6 +14,16 @@ public function index(){
 		$this->load->view("Voluntarios", $data);
 	}
 	
+	/*
+	 Descrição: Função para inserir dados no BD, em caso de sucesso carregará a página de sucesso e
+	 inserirá os dados na tabela Voluntarios, caso contrário abrirá uma página de erro.
+	 Autora: Luiza Vasconcelos
+	 Horas: Um dia. 
+	 Entrada: Dados dos voluntarios.
+	 Saída: Funcionalidade de registrar os dados do voluntario ao escolher no form e inserção de dados 
+ 	 do voluntario na tabela voluntarios no BD.
+	*/
+	
 	public function inserir(){
         require_once APPPATH."/models/Volunteer.php";
         $firstName = $this->input->post("firstName");
