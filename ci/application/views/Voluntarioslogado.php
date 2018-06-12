@@ -108,14 +108,13 @@
 						    <label>Quais dias você pode ser voluntário?</label>
 						    <input type="text" name="diasDisp" class="form-control" placeholder="Digite os dias da semana. Ex: Segunda, Terça.">
 						  </div>   
-						  </fieldset>
+						
 						  <div class="form-group">
 						    <label>Fale sobre você</label>
 						    <textarea class="form-control" name="sobreVol" rows="5" placeholder="Fale sobre você"></textarea>
 						  </div>
+						  <button type="submit" class="primary-btn float-right" >Enviar</button>
                             </div>
-						  						  
-						  <button type="submit" class="primary-btn float-right">Enviar</button>
 						</form>
 					</div>
 				</div>	

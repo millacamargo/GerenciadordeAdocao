@@ -69,8 +69,8 @@
 							<div class="title text-center">
 								<section>
 					       		<img src="<?= base_url('uploads/' . "$animal[foto]") ?>"></img>
-					        	<p><?php echo $animal['nome']; ?></p>
-					        	<p><?php echo $animal['especie'];?></p>
+					        	<h2 style="margin-top:20px; font-size: 20px"><?php echo $animal['nome']; ?></h2>
+					        	<p style="margin-top:20px;"><?php echo $animal['especie'];?></p>
 					        	<p><?php echo $animal['raca'];?></p>
 					        	<p><?php echo $animal['cor'];?></p>
 					        	<p><?php echo $animal['idade'];?></p>

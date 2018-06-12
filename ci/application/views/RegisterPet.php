@@ -23,9 +23,10 @@
 			<script type="text/javascript" src="<?= base_url();?>assets/js/registerpet.js"></script>
 		</head>
 		<body>
-			  <header id="header" id="home">
+			  <header id="header" id="home" >
 			    <div class="container main-menu">
-			    	<div class="row align-items-center justify-content-between d-flex">
+			    
+			    	<div class="row align-items-center justify-content-between d-flex" >
 				      <div id="logo">
 				        <a href="<?= base_url();?>index.php/Animal_Info/showPets"><img src="<?= base_url();?>assets/img/logo.png" alt="Logo do Abrigo" title="" /></a>
 				      </div>
@@ -156,5 +157,6 @@
 			<!-- End footer Area -->	
 			
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 		</body>
 	</html>

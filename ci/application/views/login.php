@@ -71,7 +71,7 @@
 						   		<input name="password" type="password" class="form-control" placeholder="Digite sua senha">
 						  	</div>
 						  </div>
-						  <input type="submit" value="Entrar" class="primary-btn btnlogin" style="200px;margin-left:110px; padding-left: 80px; padding-right: 80px;"/>
+						  <input type="submit" value="Entrar" class="primary-btn btnlogin" style="200px;margin-left:13%; padding-left: 80px; padding-right: 80px;"/>
 				    </form>
                 </div>
 			</section>

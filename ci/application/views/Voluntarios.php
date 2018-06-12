@@ -109,8 +109,8 @@
 						    <label>Fale sobre você</label>
 						    <textarea class="form-control" name="sobreVol" rows="5" placeholder="Fale sobre você" style="width=50px"></textarea>
 						  </div>
-                            </div>
 						  <button type="submit" class="primary-btn float-right">Enviar</button>
+                            </div>
 						</form>
 					</div>
 				</div>	
