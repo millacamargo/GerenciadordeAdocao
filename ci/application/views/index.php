@@ -123,7 +123,7 @@
 						<h1 class="text-white">Quer ajudar? Torne-se um voluntário</h1>
 						<p class="text-white">Fazer o bem é um dos privilégios que a vida nos dá a chance. A troca e a sensação de fazer algo para mudar o mundo é recompensadora. Temos espaços para todas as áreas! Você pode participar dos bazares, ajudar com tratamento veterinário e até com a parte audiovisual. Clique em Registrar-se e preencha o formulário e aguarde nosso contato! Temos certeza que você vai poder nos ajudar em algo!</p>
 						<div class="buttons d-flex flex-row">
-							<a href="<?= base_url();?>index.php/inicio/volunteer" class="primary-btn text-uppercase">Registre-se agora</a>
+							<a href="<?= base_url();?>index.php/inicio/voluntario" class="primary-btn text-uppercase">Registre-se agora</a>
 						</div>
 					</div>
 				</div>	

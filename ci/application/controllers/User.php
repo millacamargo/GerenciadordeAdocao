@@ -23,7 +23,7 @@ class User extends CI_Controller {
         $this->session->unset_userdata("msgErro");
 	}
 	
-	 // Função para pegar o que foi digitado no form, em caso de sucesso recarregará a página de cadastro,
+	 // Função para pegar o que foi digitado no form, em caso de sucesso redirecionará para pagina de login,
 	 //caso contrário abrirá uma página de erro
 	public function inserir(){
         require_once APPPATH."/models/Usuario.php";

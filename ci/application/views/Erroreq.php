@@ -8,14 +8,14 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--CSS -->
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/magnific-popup.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/nice-select.css">							
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/nice-select.css">							
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
 		</head>
 		<body>
 		    <!-- Inicio do header -->
@@ -30,9 +30,9 @@
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/User/dashboard">Home</a></li>
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Results/showResults">Adoção</a></li>
-				          <li><a href="<?= base_url();?>index.php/inicio/about">Sobre nós</a></li>
-				          <li><a href="<?= base_url();?>index.php/voluntario/volunteer">Seja um voluntário</a></li>				          
-				          <li><a href="<?= base_url();?>index.php/contato/contact">Contato</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/sobrelog">Sobre nós</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/voluntariolog">Seja um voluntário</a></li>				          
+				          <li><a href="<?= base_url();?>index.php/inicio/contatolog">Contato</a></li>
                           <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a), <?= $this->session->userdata("primeironome")?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
@@ -91,7 +91,7 @@
 			<!-- Fim do Footer -->	
 
 			<!--JS-->
-			<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
+      		<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
@@ -103,6 +103,6 @@
 			<script src="<?= base_url();?>assets/js/owl.carousel.min.js"></script>						
 			<script src="<?= base_url();?>assets/js/jquery.nice-select.min.js"></script>							
 			<script src="<?= base_url();?>assets/js/mail-script.js"></script>	
-			<script src="<?= base_url();?>assets/js/main.js"></script>
+			<script src="<?= base_url();?>assets/js/main.js"></script> 	
 		</body>
 	</html>

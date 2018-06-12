@@ -34,6 +34,7 @@
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Info/showPets">Home</a></li>
 	              		  <li class="menu-active"><a href="<?= base_url();?>index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
+	              		  <li class="menu-active"><a href="<?= base_url();?>index.php/Volunteer_Results/showresults">Voluntários</a></li>
 	              		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a),  <?= $primeironome ?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>

@@ -8,15 +8,14 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--CSS-->
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/magnific-popup.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/nice-select.css">							
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">			
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/nice-select.css">							
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
 		</head>
 		<body>
 			<!--Inicio header-->
@@ -63,16 +62,15 @@
 			<section class="Volunteer-form-area section-gap">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-9">
-							<div class="title text-center">
+							
 								<h1 class="mb-20">Sua Requisição foi feita com sucesso!</h1>
 								<p>Dentro de um período de 48hrs um de nossos voluntários irá entrar em contato com você via e-mail para marcar uma entrevista</p>
-						</div>
-					</div>						
+					</div>
+					<div style="margin-left: 450px;margin-top:30px;">
 					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Results/showResults';" class="primary-btn">Ir para a Tabela</button>
                     </div>
                 </div>
-                </div>
+              
 			</section>
 			<!-- Fim Pagina de Cadastro com sucesso -->
 																							
@@ -91,8 +89,9 @@
 			</footer>
 			<!-- Fim footer-->	
 			
+      		<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>	
+			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
   			<script src="<?= base_url();?>assets/js/easing.min.js"></script>			
 			<script src="<?= base_url();?>assets/js/hoverIntent.js"></script>
@@ -102,6 +101,6 @@
 			<script src="<?= base_url();?>assets/js/owl.carousel.min.js"></script>						
 			<script src="<?= base_url();?>assets/js/jquery.nice-select.min.js"></script>							
 			<script src="<?= base_url();?>assets/js/mail-script.js"></script>	
-			<script src="<?= base_url();?>assets/js/main.js"></script>	
+			<script src="<?= base_url();?>assets/js/main.js"></script> 	
 		</body>
 	</html>

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Controller_Voluntario extends CI_Controller{
+class Volunteerlog extends CI_Controller{
 
 	/*
 	 Descrição: Função para inserir dados no BD, em caso de sucesso carregará a página de sucesso e
@@ -30,9 +30,9 @@ class Controller_Voluntario extends CI_Controller{
         if($volunteer->isValido()){
             $this->load->model("InsertdaoVol");
             $this->InsertdaoVol->insertObject($volunteer);
-            $this->load->view('SucessoVol');
+           $this->load->view('SucessoVollog');
         }else{
-            $this->load->view("erro");
+            $this->load->view("ErroVollog");
         }
     }
 	

@@ -29,6 +29,7 @@
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Info/showPets">Home</a></li>
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Volunteer_Results/showresults">Voluntários</a></li>
 				          <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a), <?= $this->session->userdata("primeironome")?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
@@ -59,16 +60,17 @@
 			<section class="Volunteer-form-area section-gap">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-9">
-							<div class="title text-center">
-								<h1 class="mb-20">Animal cadastrado com Sucesso!</h1>
-						</div>
-					</div>						
-					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">Cadastrar Outro Animal</button>
-					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets';" class="primary-btn">Ir para a Tabela</button>
+
+								<h1 class="mb-20">Animal cadastrado com sucesso!</h1>
+					</div>
+					
+						<div style="margin-left: 360px;margin-top:50px;">	
+							 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">Cadastrar Outro Animal</button>
+					 		 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets';" class="primary-btn">Ir para a Tabela</button>
+                    	</div>
                     </div>
-                </div>
-                </div>
+               
+                
 			</section>
 			<!-- End Pagina de Cadastro com sucesso -->
 																							

@@ -2,20 +2,20 @@
 	<html lang="zxx" class="no-js">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="<?= base_url();?>assets/img/logo.png">
+		<link rel="shortcut icon" href="img/fav.png">
 		<meta charset="UTF-8">
 		<title>Adote um animal | Seja um voluntário</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--CSS-->
-		<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
-		<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
-		<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
-		<link rel="stylesheet" href="<?= base_url();?>assets/css/magnific-popup.css">
-		<link rel="stylesheet" href="<?= base_url();?>assets/css/nice-select.css">							
-		<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
-		<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
-		<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
+			<!--CSS -->
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/magnific-popup.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/nice-select.css">							
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
+			<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
 		</head>
 		
 		<body>
@@ -23,16 +23,19 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="<?= base_url();?>index.php/inicio/index"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
+				        <a href="<?= base_url();?>index.php/user/dashboard"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="<?= base_url();?>index.php/Inicio/index">Home</a></li>
-				          <li><a href="<?= base_url();?>index.php/inicio/sobre">Sobre nós</a></li>
-				          <li><a href="<?= base_url();?>index.php/inicio/voluntario">Seja um voluntário</a></li>				          
-				          <li><a href="<?= base_url();?>index.php/inicio/contato">Contato</a></li>
-                          <li><a href="<?= base_url();?>index.php/user/register">Registre-se</a></li>
-                          <li><a href="<?= base_url();?>index.php/user/login">Login</a></li>			              
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/User/dashboard">Home</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Results/showResults">Adoção</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Inicio/sobrelog">Sobre nós</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Inicio/voluntariolog">Seja um voluntário</a></li>				          
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Inicio/contatolog">Contato</a></li>
+                          <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a),  <?= $primeironome ?></li>
+				          <li> <form method="POST" action="/ci/index.php/user/logout">
+                                <input type="submit" class="genric-btn primary small" value="Logout"/>
+                          </form> </li>		 		              
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -48,7 +51,7 @@
 							<h1 class="text-white">
 								Seja um voluntário			
 							</h1>	
-							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/inicio/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/inicio/voluntario">Registro de Voluntários</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/User/dashboard">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Inicio/voluntariolog">Registro de Voluntários</a></p>
 						</div>	
 					</div>
 				</div>
@@ -66,7 +69,7 @@
 						</div>
 					</div>						
 					<div class="row justify-content-center">
-						<form class="col-lg-9" method="POST" action="<?=base_url()?>index.php/Controller_Voluntario/inserir">
+						<form class="col-lg-9" method="POST" action="<?=base_url()?>index.php/Volunteerlog/inserir">
 						  <div class="form-group">
 						    <label>Primeiro Nome</label>
 						    <input type="text" name="firstName" class="form-control" placeholder="Primeiro Nome">
@@ -104,12 +107,14 @@
                           <div class="form-group">
 						    <label>Quais dias você pode ser voluntário?</label>
 						    <input type="text" name="diasDisp" class="form-control" placeholder="Digite os dias da semana. Ex: Segunda, Terça.">
-						  </div> 
+						  </div>   
+						  </fieldset>
 						  <div class="form-group">
 						    <label>Fale sobre você</label>
-						    <textarea class="form-control" name="sobreVol" rows="5" placeholder="Fale sobre você" style="width=50px"></textarea>
+						    <textarea class="form-control" name="sobreVol" rows="5" placeholder="Fale sobre você"></textarea>
 						  </div>
                             </div>
+						  						  
 						  <button type="submit" class="primary-btn float-right">Enviar</button>
 						</form>
 					</div>
@@ -145,7 +150,7 @@
 			<script src="<?= base_url();?>assets/js/owl.carousel.min.js"></script>						
 			<script src="<?= base_url();?>assets/js/jquery.nice-select.min.js"></script>							
 			<script src="<?= base_url();?>assets/js/mail-script.js"></script>	
-			<script src="<?= base_url();?>assets/js/main.js"></script>	
+			<script src="<?= base_url();?>assets/js/main.js"></script> 		
 
 		</body>
 	</html>

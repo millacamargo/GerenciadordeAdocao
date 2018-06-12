@@ -34,16 +34,16 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				        <a href="<?= base_url();?>index.php/Inicio/index"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Home</a></li>
-				          <li><a href="about.html">Sobre nós</a></li>
-				          <li><a href="volunteer.html">Seja um voluntário</a></li>				          
-				          <li><a href="contact.html">Contato</a></li>
-                          <li><a href="register.html">Registre-se</a></li>
-                          <li><a href="login.html">Login</a></li>		              
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Inicio/index">Home</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/sobre">Sobre nós</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/voluntario">Seja um voluntário</a></li>				          
+				          <li><a href="<?= base_url();?>index.php/inicio/contato">Contato</a></li>
+                          <li><a href="<?= base_url();?>index.php/user/register">Registre-se</a></li>
+                          <li><a href="<?= base_url();?>index.php/user/login">Login</a></li>		              
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -59,7 +59,7 @@
 							<h1 class="text-white">
 								Contato				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contato</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/inicio/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/inicio/contato"> Contato</a></p>
 						</div>	
 					</div>
 				</div>
@@ -74,18 +74,20 @@
 							<form class="form-area " action="<?=base_url()?>index.php/Controller_Contatos/postEmail" method="POST" id="myForm"  class="contact-form text-right">
 								<div class="row">	
 									<div class="col-lg-6 form-group">
+										
 										<input name="name" placeholder="Nome" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome'" class="common-input mb-20 form-control" required="" type="text">
 									
 										<input name="email" placeholder="E-mail" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'" class="common-input mb-20 form-control" required="" type="email">
-
+									
 										<input name="subject" placeholder="Assunto" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Assunto'" class="common-input mb-20 form-control" required="" type="text">
 									</div>
 									<div class="col-lg-6 form-group">
+										
 										<textarea class="common-textarea form-control" name="message" placeholder="Mensagem" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mensagem'" required=""></textarea>						
 									</div>
 									<div class="col-lg-12 d-flex justify-content-between">
 										<div class="alert-msg" style="text-align: left;"></div>
-										<button class="genric-btn primary circle" style="float: right;" type="submit" value="Enviar">Enviar</button>		
+										<button class="primary-btn" style="float: right;" type="submit" value="Enviar">Enviar</button>		
 									</div>
 								</div>
 							</form>	

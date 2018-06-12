@@ -29,7 +29,7 @@
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/Inicio/index">Home</a></li>
 				          <li><a href="<?= base_url();?>index.php/inicio/sobre">Sobre nós</a></li>
 				          <li><a href="<?= base_url();?>index.php/inicio/voluntario">Seja um voluntário</a></li>				          
-				          <li><a href="<?= base_url();?>index.php/incio/contato">Contato</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/contato">Contato</a></li>
                           <li><a href="<?= base_url();?>index.php/user/register">Registre-se</a></li>
                           <li><a href="<?= base_url();?>index.php/user/login">Login</a></li>			              
 				        </ul>
@@ -60,11 +60,11 @@
 			<section class="home-about-area">
 				<div class="container-fluid">
 					<div class="row align-items-center">	
-						<div class="col-lg-6 home-about-left no-padding">
+						<div class="col-lg-6 home-about-left no-padding" style="margin-top: 50px; margin-bottom: 80px;">
 							<img src="<?= base_url();?>assets/img/about.jpg" alt="">
 						</div>
-						<div class="col-lg-6 home-about-right no-padding">
-							<h1>
+						<div class="col-lg-6 home-about-right no-padding" style="margin-top: 50px; margin-bottom: 80px;">
+							<h1 style="margin-top: 20px; margin-bottom: 20px;">
 								Fazendo o bem desde 2016
 							</h1>
 							<p>A Animal Shelter é uma Organização da Sociedade Civil de Interesse Público (OSCIP) fundada em 2016, que tem como MISSÃO transformar a realidade de animais desamparados.</p>

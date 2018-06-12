@@ -36,7 +36,13 @@ class Volunteer_Results extends CI_Controller {
 		// processo de pegar os dados do BD
 		$data['results'] = $this->VolunteerResults->getAll($data);
 		
-		$this->load->view("VolunteerResults",$data);
+		$data['primeironome'] = $this->session->userdata("primeironome");
+        if(isset($data['primeironome'])){
+            $this->load->view("VolunteerResults",$data);
+        }else{
+            $this->session->set_userdata("msgErro","Você precisa estar logado!");
+            redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login',true);
+        }
 	
 	}
 }

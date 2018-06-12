@@ -29,9 +29,9 @@
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/inicio/index">Home</a></li>
-				          <li><a href="<?= base_url();?>index.php/inicio/about">Sobre nós</a></li>
-				          <li><a href="<?= base_url();?>index.php/voluntario/volunteer">Seja um voluntário</a></li>				          
-				          <li><a href="<?= base_url();?>index.php/contato/contact">Contato</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/sobre">Sobre nós</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/voluntario">Seja um voluntário</a></li>				          
+				          <li><a href="<?= base_url();?>index.php/inicio/contato">Contato</a></li>
                           <li><a href="<?= base_url();?>index.php/user/register">Registre-se</a></li>
                           <li><a href="<?= base_url();?>index.php/user/login">Login</a></li>	             
 				        </ul>

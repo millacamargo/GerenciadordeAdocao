@@ -8,14 +8,14 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--CSS -->
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/magnific-popup.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/nice-select.css">							
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
-			<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/nice-select.css">							
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
+		<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
 		</head>
 		<body>
 		    <!-- Inicio do header -->
@@ -30,6 +30,7 @@
 				        <ul class="nav-menu">
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Info/showPets">Home</a></li>
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
+                		  <li class="menu-active"><a href="<?= base_url();?>index.php/Volunteer_Results/showresults">Voluntários</a></li>
                 		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a),  <?= $this->session->userdata("primeironome")?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
@@ -68,8 +69,7 @@
 					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets';" class="primary-btn">Ir para a Tabela</button>
                     </div>
                     </div>
-                </div>
-                </div>
+
 			</section>
 		    <!--  Fim do conteudo de erro -->
 		    

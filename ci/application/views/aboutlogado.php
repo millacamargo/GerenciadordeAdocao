@@ -26,11 +26,11 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/User/dashboard">Home</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/User/dashboard">Home</a></li>
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Results/showResults">Adoção</a></li>
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/sobrelog">Sobre nós</a></li>
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/voluntariolog">Seja um voluntário</a></li>				          
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/contatolog">Contato</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Inicio/sobrelog">Sobre nós</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Inicio/voluntariolog">Seja um voluntário</a></li>				          
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Inicio/contatolog">Contato</a></li>
 				          <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a),  <?= $primeironome ?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
@@ -50,7 +50,7 @@
 							<h1 class="text-white">
 								Sobre nós			
 							</h1>	
-							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/User/dashboard">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/sobrelog"> Sobre nós</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/User/dashboard">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Inicio/sobrelog"> Sobre nós</a></p>
 						</div>	
 					</div>
 				</div>
@@ -63,10 +63,10 @@
 			<section class="home-about-area">
 				<div class="container-fluid">
 					<div class="row align-items-center">	
-						<div class="col-lg-6 home-about-left no-padding">
+						<div class="col-lg-6 home-about-left no-padding" style="margin-top: 50px; margin-bottom: 80px;">
 							<img src="<?= base_url();?>assets/img/aboutt.jpg" alt="">
 						</div>
-						<div class="col-lg-6 home-about-right no-padding">
+						<div class="col-lg-6 home-about-right no-padding" style="margin-top: 50px; margin-bottom: 80px;">
 							<h1>
 								Fazendo o bem desde 2016
 							</h1>

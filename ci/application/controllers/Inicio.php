@@ -16,12 +16,17 @@ class Inicio extends CI_Controller {
 	// Função para abrir a página de contato
 		public function contato()
 	{
-		$this->load->view('contact');
+		$this->load->view('Contatos');
 	}
 	// Função para abrir a página de cadastro de voluntario
 		public function voluntario()
 	{
-		$this->load->view('volunteer');
+		$this->load->model("Cidade_model");
+    
+    $data['dados'] = [
+			'options_cidades' => $this->Cidade_model->selectCidade()
+		];
+		$this->load->view('Voluntarios', $data);
 	}
 	// Função para abrir a página sobre nós
 		public function sobre()
@@ -35,7 +40,7 @@ class Inicio extends CI_Controller {
 		{
         $data["primeironome"] = $this->session->userdata("primeironome");
         if(isset($data["primeironome"])){
-            $this->load->view("contactlogado",$data);
+            $this->load->view("Contatoslogado",$data);
         }else{
             $this->session->set_userdata("msgErro","Você precisa estar logado!");
             redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login',true);
@@ -48,7 +53,12 @@ class Inicio extends CI_Controller {
 		{
         $data["primeironome"] = $this->session->userdata("primeironome");
         if(isset($data["primeironome"])){
-            $this->load->view("volunteerlogado",$data);
+        	$this->load->model("Cidade_model");
+    
+    $data['dados'] = [
+			'options_cidades' => $this->Cidade_model->selectCidade()
+		];
+            $this->load->view("Voluntarioslogado",$data);
         }else{
             $this->session->set_userdata("msgErro","Você precisa estar logado!");
             redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login',true);
