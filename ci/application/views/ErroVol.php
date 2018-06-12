@@ -65,8 +65,7 @@
 								<h1 class="mb-20">Erro! Campos não preenchidos. <br> Não foi possível completar o registro.</h1>
 						</div>
 					</div>						
-					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">Cadastrar Outro Animal</button>
-					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets';" class="primary-btn">Ir para a Tabela</button>
+					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Controller_Voluntario/index';" class="primary-btn">Voltar ao Cadastrar Voluntário</button>
                     </div>
                 </div>
                 </div>

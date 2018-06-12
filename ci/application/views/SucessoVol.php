@@ -58,7 +58,7 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Registro de animais	
+								Quer ajudar? Torne-se um voluntário	
 							</h1>	
 							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Register_Animal/showRegister">Registro de animais</a></p>
 						</div>	
@@ -76,8 +76,7 @@
 								<h1 class="mb-20">Você foi cadastrado com Sucesso!</h1>
 						</div>
 					</div>						
-					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">Cadastrar Outro Animal</button>
-					 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets';" class="primary-btn">Ir para a Tabela</button>
+										 <button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Controller_Voluntario/index';" class="primary-btn">Voltar ao Cadastrar Voluntário</button>
                     </div>
                 </div>
                 </div>

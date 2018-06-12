@@ -60,7 +60,7 @@
 							<h1 class="text-white">
 								Seja um voluntário			
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="volunteer.html">Seja um voluntário</a></p>
+						<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="volunteer.html">Seja um voluntário</a></p>
 						</div>	
 					</div>
 				</div>
@@ -74,99 +74,55 @@
 						<div class="menu-content pb-60 col-lg-9">
 							<div class="title text-center">
 								<h1 class="mb-20">Quer ajudar? Torne-se um voluntário</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+								<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Controller_Voluntario/index">Registro de Voluntários</a></p>
 							</div>
 						</div>
 					</div>						
 					<div class="row justify-content-center">
 						<form class="col-lg-9" method="POST" action="<?=base_url()?>index.php/Controller_Voluntario/inserir">
 						  <div class="form-group">
-						    <label name="firstName">Primeiro Nome</label>
-						    <input type="text" class="form-control" placeholder="Primeiro Nome">
+						    <label>Primeiro Nome</label>
+						    <input type="text" name="firstName" class="form-control" placeholder="Primeiro Nome">
 						  </div>
 						  <div class="form-group">
-						    <label name="lastName">Sobrenome</label>
-						    <input type="text" class="form-control" placeholder="Sobrenome">
+						    <label>Sobrenome</label>
+						    <input type="text" name="lastName" class="form-control" placeholder="Sobrenome">
 						  </div>						  
 						  <div class="form-group">
-						    <label name="enderVol">Endereço</label>
-						    <input type="text" class="form-control mb-20" placeholder="Endereço">
+						    <label>Endereço</label>
+						    <input type="text" name="enderVol" class="form-control mb-20" placeholder="Endereço">
 						  </div>						  
 						  <div class="form-row">
 						  	<div class="col-6 mb-30">
-						  		<label name="cidadeVol">Cidade</label>
+						  		<label>Cidade</label>
 						   		<div class="select-option" id="service-select">
-									<select>
-										<option data-display="Selecione a cidade">Selecione a cidade</option>
-                                        <option value="1">Bertioga</option>
-										<option value="2">Cubatão</option>
-										<option value="3">Guarujá</option>
-										<option value="4">Itanhaém</option>
-										<option value="5">Mongaguá</option>
-                                        <option value="6">Peruíbe</option>
-										<option value="7">Praia Grande</option>
-										<option value="8">Santos</option>
-                                        <option value="9">São Vicente</option>
+									<select name="cidadeVol">
+										<?php echo $dados['options_cidades']; ?>
 									</select>
 								</div>	
 						  	</div>
 						  	<div class="col-6 mb-30">
-						  		<label name="cepVol">CEP</label>
-						   		<input type="text" class="form-control" placeholder="CEP">						  		
+						  		<label>CEP</label>
+						   		<input type="text" name="cepVol" class="form-control" placeholder="CEP">						  		
 						  	</div>						  	
 						  	<div class="col-6 mb-30">
-						  		<label name="emailVol">E-mail</label>
-						   		<input type="email" class="form-control" placeholder="E-mail">
+						  		<label>E-mail</label>
+						   		<input type="email" name="emailVol" class="form-control" placeholder="E-mail">
 						  	</div>
 						  	<div class="col-6 mb-30">
-						  		<label name="celVol">Número de telefone</label>
-						   		<input type="phone" class="form-control" placeholder="Número de telefone">
+						  		<label>Número de telefone</label>
+						   		<input type="phone" name="celVol" class="form-control" placeholder="Número de telefone">
 						  	</div>
 						  </div>		
-
-						  <fieldset class="form-group">
-							<label name="diasDisp">Quais dias você pode ser voluntário?</label>
-                            <div class="form-group ">
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" name="inlinecheckbox" id="inlineRadio1" value="option1"> Segunda
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" name="inlinecheckbox" id="inlineRadio2" value="option2"> Terça
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" name="inlinecheckbox" id="inlineRadio3" value="option3"> Quarta
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" name="inlinecheckbox" id="inlineRadio2" value="option4"> Quinta
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" name="inlinecheckbox" id="inlineRadio2" value="option5"> Sexta
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" name="inlinecheckbox" id="inlineRadio2" value="option6"> Sábado
-                                    </label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" name="inlinecheckbox" id="inlineRadio2" value="option6"> Domingo
-                                    </label>
-                                </div>                                
+                          <div class="form-group">
+						    <label>Quais dias você pode ser voluntário?</label>
+						    <input type="text" name="diasDisp" class="form-control" placeholder="Digite os dias da semana. Ex: Segunda, Terça.">
+						  </div>   
                             </div>
 						  </fieldset>
 						  <div class="form-group">
-						    <label name="sobreVol">Fale sobre você</label>
-						    <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Fale sobre você"></textarea>
+						    <label>Fale sobre você</label>
+						    <textarea class="form-control" name="sobreVol" id="exampleTextarea" rows="5" placeholder="Fale sobre você"></textarea>
 						  </div>						  
 						  <button type="submit" class="primary-btn float-right">Enviar</button>
 						</form>

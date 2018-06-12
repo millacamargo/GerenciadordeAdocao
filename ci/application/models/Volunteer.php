@@ -1,6 +1,6 @@
 <?php
 
-class volunteer {
+class Volunteer {
     
     private $firstName, $lastName, $enderVol, $cidadeVol, $cepVol, $emailVol, $celVol, $diasDisp, $sobreVol, $id;
     
