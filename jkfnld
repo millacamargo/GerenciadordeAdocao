@@ -1,0 +1,35 @@
+[33mcommit 320df3db484e9f159d24d75d432b386dad506a7a[m[33m ([m[1;36mHEAD -> [m[1;32mlogin[m[33m)[m
+Author: Luis Felipe <lfelipevasconcellos@hotmail.com>
+Date:   Mon Jun 4 14:54:06 2018 +0000
+
+    Foi feita a pagina de Usuario na pasta models
+
+[33mcommit 636f1e3c733c12f51f7fac7863bc4eb52693fad1[m
+Author: Luis Felipe <lfelipevasconcellos@hotmail.com>
+Date:   Mon Jun 4 04:38:06 2018 +0000
+
+    Foram feitas as páginas de login e cadastro de usuario na pasta views e insertdao e logindao na pasta de models, também foram alterados os arquivos autoload, config e database da pasta config
+
+[33mcommit 45db8f7f9b9a1dfddbc2c3eaaf822e2159a48fc2[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Luis Felipe <lfelipevasconcellos@hotmail.com>
+Date:   Mon Jun 4 02:14:08 2018 +0000
+
+    pastas arrumadas
+
+[33mcommit ab7fc2ab22d6920b6d9c9459ace4b5c92d1ff553[m
+Author: Milla Camargo <milamx98@hotmail.com>
+Date:   Sun Jun 3 18:15:18 2018 +0000
+
+    Pastas necessarias para todos trabalharem
+
+[33mcommit e6e38d4bbd2ef5e0d29b5fe8e0be550651f5b5da[m
+Author: Milla Camargo <milamx98@hotmail.com>
+Date:   Thu May 31 22:07:34 2018 +0000
+
+    Teste
+
+[33mcommit 7c62ffb813a52496bad817a285f6152806b65610[m
+Author: millacamargo <36647779+millacamargo@users.noreply.github.com>
+Date:   Tue May 15 09:44:44 2018 -0300
+
+    Initial commit
