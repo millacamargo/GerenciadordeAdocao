@@ -27,12 +27,12 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets"><img src="<?= base_url();?>assets/img/logo.png" alt="Logo do Abrigo" title="" /></a>
+				        <a href="<?= base_url();?>index.php/Animal_Info/showPets"><img src="<?= base_url();?>assets/img/logo.png" alt="Logo do Abrigo" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home</a></li>
-	              		  <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Info/showPets">Home</a></li>
+	              		  <li class="menu-active"><a href="<?= base_url();?>index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
 	              		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a),  <?= $primeironome ?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
@@ -52,14 +52,14 @@
 							<h1 class="text-white">
 								Registro de Animais	
 							</h1>	
-							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Register_Animal/showRegister">Registro de animais</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/Animal_Info/showPets">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Register_Animal/showRegister">Registro de animais</a></p>
 						</div>	
 					</div>
 				</div>
 			</section>
 			<!-- End banner Area -->	
 				
-			<!-- Start Volunteer-form Area -->
+			<!-- Iniico registro -->
 			<section class="Volunteer-form-area section-gap">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
@@ -121,7 +121,7 @@
 								
 								  <div class="form-group">
 						    <h3 for="first-name">Mais Descrições</h3>
-						    <input type="text" name="descricao" class="form-control" placeholder="(Opcional)">
+						    <input  type="textarea" name="descricao" class="form-control" rows="5" placeholder="(Opcional)">
 						  </div>
 						 
 						  </div>			
@@ -137,7 +137,7 @@
                 </div>
                 </div>
 			</section>
-			<!-- End Volunteer-form Area -->
+			<!-- Fim registro -->
 																							
 			<!-- start footer Area -->		
 			<footer class="footer-area">

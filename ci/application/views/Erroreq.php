@@ -2,7 +2,7 @@
 	<html lang="zxx" class="no-js">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="<?= base_url();?>assets/img/logo.png">
 		<meta charset="UTF-8">
 		<title>Adote um animal | Erro </title>
 
@@ -23,16 +23,16 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/User/dashboard"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
+				        <a href="<?= base_url();?>index.php/User/dashboard"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <!--Inicio do menu-->
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/User/dashboard">Home</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/User/dashboard">Home</a></li>
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Results/showResults">Adoção</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/about">Sobre nós</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/voluntario/volunteer">Seja um voluntário</a></li>				          
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/contato/contact">Contato</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/about">Sobre nós</a></li>
+				          <li><a href="<?= base_url();?>index.php/voluntario/volunteer">Seja um voluntário</a></li>				          
+				          <li><a href="<?= base_url();?>index.php/contato/contact">Contato</a></li>
                           <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a), <?= $this->session->userdata("primeironome")?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
@@ -52,7 +52,7 @@
 							<h1 class="text-white">
 								Erro de validação	
 							</h1>	
-							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/User/dashboard">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/User/dashboard">Erro de validação</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/User/dashboard">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/User/dashboard">Erro de validação</a></p>
 						</div>	
 					</div>
 				</div>
@@ -90,6 +90,7 @@
 			</footer>
 			<!-- Fim do Footer -->	
 
+			<!--JS-->
 			<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			

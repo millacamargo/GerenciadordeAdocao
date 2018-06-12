@@ -2,7 +2,7 @@
 	<html lang="zxx" class="no-js">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="<?= base_url();?>assets/img/logo.png">
 		<meta charset="UTF-8">
 		<title>Adote um animal | Erro </title>
 
@@ -23,17 +23,17 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
+				        <a href="<?= base_url();?>index.php/inicio/index"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <!--Inicio do menu-->
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Home</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/about">Sobre nós</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/voluntario/volunteer">Seja um voluntário</a></li>				          
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/contato/contact">Contato</a></li>
-                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register">Registre-se</a></li>
-                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login">Login</a></li>	             
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/inicio/index">Home</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/about">Sobre nós</a></li>
+				          <li><a href="<?= base_url();?>index.php/voluntario/volunteer">Seja um voluntário</a></li>				          
+				          <li><a href="<?= base_url();?>index.php/contato/contact">Contato</a></li>
+                          <li><a href="<?= base_url();?>index.php/user/register">Registre-se</a></li>
+                          <li><a href="<?= base_url();?>index.php/user/login">Login</a></li>	             
 				        </ul>
 				      </nav><!-- Fim do menu -->		    		
 			    	</div>
@@ -49,7 +49,7 @@
 							<h1 class="text-white">
 								Erro de validação	
 							</h1>	
-							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Erro de validação</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/inicio/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/inicio/index">Erro de validação</a></p>
 						</div>	
 					</div>
 				</div>

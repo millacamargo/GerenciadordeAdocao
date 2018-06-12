@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
-		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
 		<link rel="shortcut icon" href="<?= base_url();?>assets/img/logo.png">
-		<!-- Author Meta -->
-		<meta name="author" content="codepixer">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
 		<meta charset="UTF-8">
-		<!-- Site Title -->
 		<title>Adote um animal | Registro de animais</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
+			<!--CSS-->
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
@@ -28,33 +16,34 @@
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">			
 		</head>
 		<body>
+			<!--Inicio header-->
 			  <header id="header" id="home">
-			    <div class="container main-menu">
+			    <div class="container main-menu"> <!--Inicio menu-->
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard"><img src="<?= base_url();?>assets/img/logo.png" alt="Logo do Abrigo" title="" /></a>
+				        <a href="<?= base_url();?>index.php/user/dashboard"><img src="<?= base_url();?>assets/img/logo.png" alt="Logo do Abrigo" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard">Home</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/user/dashboard">Home</a></li>
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Results/showResults">Adoção</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/sobrelog">Sobre nós</a></li>
-				          <li><a href="volunteer.html">Seja um voluntário</a></li>				          
-				          <li><a href="contact.html">Contato</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/sobrelog">Sobre nós</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/voluntariolog">Seja um voluntário</a></li>				          
+				          <li><a href="<?= base_url();?>index.php/inicio/contatolog">Contato</a></li>
                           <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a), <?= $this->session->userdata("primeironome")?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
                           </form> </li>			              
 				        </ul>
-				      </nav><!-- #nav-menu-container -->		    		
+				      </nav><!-- Fim nenu -->		    		
 			    	</div>
 			    </div>
-			  </header><!-- #header -->
+			  </header><!-- Fim header -->
 
-			<!-- start banner Area -->
+			<!-- Inicio banner -->
 			<section class="banner-area relative" id="home">	
 				<div class="overlay overlay-bg"></div>
 				<div class="container">				
@@ -63,14 +52,14 @@
 							<h1 class="text-white">
 								Busca de Animais
 							</h1>	
-							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Animal_Results/showResults">Busca de animais</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/user/dashboard">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Animal_Results/showResults">Busca de animais</a></p>
 						</div>	
 					</div>
 				</div>
 			</section>
-			<!-- End banner Area -->	
+			<!-- Fim banner -->	
 				
-			<!-- Start Pagina de Cadastro com sucesso -->
+			<!-- Inicio Pagina de Cadastro com sucesso -->
 			<section class="Volunteer-form-area section-gap">
 				<div class="container">
 					<div class="row d-flex justify-content-center">
@@ -85,9 +74,9 @@
                 </div>
                 </div>
 			</section>
-			<!-- End Pagina de Cadastro com sucesso -->
+			<!-- Fim Pagina de Cadastro com sucesso -->
 																							
-			<!-- start footer Area -->		
+			<!-- Inicio footer -->		
 			<footer class="footer-area">
 				<div class="copyright-text">
 					<div class="container">
@@ -100,7 +89,7 @@
 					</div>
 				</div>
 			</footer>
-			<!-- End footer Area -->	
+			<!-- Fim footer-->	
 			
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>	

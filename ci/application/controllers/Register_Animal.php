@@ -50,11 +50,13 @@ class Register_Animal extends CI_Controller {
         $sexo = $this->input->post("sexo");
         $fotoNome = "semfoto.jpg";
         
+        // Este if verifica se o caminho ja existe, se não cria um caminho.
         $path = FCPATH. "uploads/";
         if (!file_exists($path)) {
         	mkdir($path);
         }
         
+        // Este if verifica se o usuário mandou uma foto, pega o nome para salvar no BD e move ela pra pasta no servidor.
         if (isset($_FILES["foto"])) {
         	$foto = $_FILES["foto"];
         	$fotoNome = $foto['name'];

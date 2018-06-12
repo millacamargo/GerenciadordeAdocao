@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
      //Autor: Luis Felipe
      //Tempo: 7 horas
      //Entrada: Foi criado o Controller para cuidar da parte de usuário, onde são carregadas as páginas de
-     //cadastro de usuario, login e a dashboard do site, além da função de inserir um novo usuario de acordo com o que foi digitado no form
+     //cadastro de usuario, login e a dashboard do site, além da função de inserir um novo usuario de acordo com o que foi digitado no form de cadastro
      //e as funções para autenticar e deslogar
      
 class User extends CI_Controller {
@@ -42,6 +42,7 @@ class User extends CI_Controller {
             redirect('https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/sucesso',true);
         }else{
             $this->load->view("erro");
+            header("Refresh: 4;url=https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register");
         }
     }
     //Função para abrir a pagina de sucesso caso o cadastro seja efetuado com sucesso

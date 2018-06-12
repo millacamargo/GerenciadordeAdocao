@@ -1,24 +1,36 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+     //Descrição: Metodo para abrir a página inicial, de contato, de cadastro de voluntario e sobre nós 
+     //(também foram criadas funções para verificar se o usuario está logado ao abrir essas paginas)
+     //Autor: Luis Felipe
+     //Tempo: 1 hora
+     //Entrada: Foi criado o Controller para cuidar da parte de inicio do, onde são carregadas as páginas de
+     //cadastro de voluntario, sobre nós, contato e a index
+     
 class Inicio extends CI_Controller {
 	// Função para abrir a página de inicio do site
 	public function index()
 	{
 		$this->load->view('index');
 	}
+	// Função para abrir a página de contato
 		public function contato()
 	{
 		$this->load->view('contact');
 	}
+	// Função para abrir a página de cadastro de voluntario
 		public function voluntario()
 	{
 		$this->load->view('volunteer');
 	}
+	// Função para abrir a página sobre nós
 		public function sobre()
 	{
 		$this->load->view('about');
 	}
+	// Função para abrir a página de contato apenas se o usuario estiver logado
+	//caso contrario apresentarar mensagem de erro
+	//AUTORIZAÇÃO
 		public function contatolog()
 		{
         $data["primeironome"] = $this->session->userdata("primeironome");

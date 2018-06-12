@@ -7,9 +7,7 @@
 		<title>Adote um animal | Resultados</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
+			<!--CSS-->
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
@@ -30,26 +28,26 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
+				        <a href="<?= base_url();?>index.php/user/dashboard"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/dashboard">Home</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/user/dashboard">Home</a></li>
 				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Results/showResults">Adoção</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/sobrelog">Sobre nós</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/voluntariolog">Seja um voluntário</a></li>				          
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/contatolog">Contato</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/sobrelog">Sobre nós</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/voluntariolog">Seja um voluntário</a></li>				          
+				          <li><a href="<?= base_url();?>index.php/inicio/contatolog">Contato</a></li>
 				          <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a), <?= $primeironome ?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/></form></li>
 			              
 				        </ul>
-				      </nav><!-- #nav-menu-container -->		    		
+				      </nav><!-- Fim do menu -->		    		
 			    	</div>
 			    </div>
-			  </header><!-- #header -->
+			  </header><!-- Fim do header -->
 
-			<!-- start banner Area -->
+			<!-- Inicio banner-->
 			<section class="banner-area relative" id="home">	
 				<div class="overlay overlay-bg"></div>
 				<div class="container">				
@@ -63,14 +61,19 @@
 					</div>
 				</div>
 			</section>
-			<!-- End banner Area -->	
+			<!-- Fim banner -->
 			
+			<!-- Inicio animais-->
             <div class="whole-wrap">
 				<div class="container">
-                    	<h2>Animais em Adoção</h2>
+                    	<h2 style="text-align:center;margin: 80px 0 80px 0;">Animais em Adoção</h2>
     					<div>
     					<?php foreach ($results as $animal){ ?>
-					     	<section>
+					     	<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<section>
 					       		<img src="<?= base_url('uploads/' . "$animal[foto]") ?>"></img>
 					        	<p><?php echo $animal['nome']; ?></p>
 					        	<p><?php echo $animal['especie'];?></p>
@@ -82,14 +85,18 @@
 					        	<!-- ao clicar ele envia o id do animal ao banco, compara e se tiver, ele insere para a tabela requisicao -->
 					        	<p><a type="submit" href='<?= "https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Results/inserir/" . $animal['id'] ?>'
 					        	name="submit" class="primary-btn">Adotar</a></p>
-					      	</section>
+					      		</section>
+					      	</div>
+					    </div>
+					</div>
       					<?php } ?>
     					</div>
     			</div>
 			</div>
 			</div>
+			<!-- Fim animais-->
 																							
-			<!-- start footer Area -->		
+			<!-- Inicio footer -->		
 			<footer class="footer-area">
 				<div class="copyright-text">
 					<div class="container">
@@ -105,10 +112,11 @@
 			</div>
   			
 			</footer>
-			<!-- End footer Area -->	
-
+			<!-- Fim footer -->	
+			
+			<!--JS-->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-						<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>

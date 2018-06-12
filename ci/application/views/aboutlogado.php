@@ -2,7 +2,7 @@
 	<html lang="zxx" class="no-js">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="<?= base_url();?>assets/img/logo.png">
 		<meta charset="UTF-8">
 		<title>Adote um animal | Sobre nós</title>
 
@@ -64,17 +64,16 @@
 				<div class="container-fluid">
 					<div class="row align-items-center">	
 						<div class="col-lg-6 home-about-left no-padding">
-							<img src="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/img/about-img.jpg" alt="">
+							<img src="<?= base_url();?>assets/img/aboutt.jpg" alt="">
 						</div>
 						<div class="col-lg-6 home-about-right no-padding">
 							<h1>
-								Globally Connected
-								by Large Network
+								Fazendo o bem desde 2016
 							</h1>
-							<h5>We are here to listen from you deliver exellence</h5>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-							</p>
+							<p>A Animal Shelter é uma Organização da Sociedade Civil de Interesse Público (OSCIP) fundada em 2016, que tem como MISSÃO transformar a realidade de animais desamparados.</p>
+							<p>DEFENDEMOS que os animais merecem RESPEITO, AMOR, CUIDADO E DIGNIDADE, e repudiamos toda e qualquer forma de violência ou crueldade.</p>
+
+							<p>Para aumentar nossa abrangência, estamos sempre em busca de pessoas e empresas que queiram fazer a diferença no mundo e que simpatizem com a causa animal.</p>
 							
 						</div>
 					</div>

@@ -7,9 +7,7 @@
 		<title>Adote um animal | Resultados</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
+			<!--CSS-->
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
@@ -30,12 +28,12 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
+				        <a href="<?= base_url();?>index.php/Animal_Info/showPets"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home</a></li>
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Info/showPets">Home</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
 				          <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a),  <?= $primeironome ?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
@@ -55,7 +53,7 @@
 							<h1 class="text-white">
 								Animais Requisitados
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Required_Animals/showRequired">Animais Requisitados</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/Animal_Info/showPets">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Required_Animals/showRequired">Animais Requisitados</a></p>
 						</div>	
 					</div>
 				</div>
@@ -64,7 +62,7 @@
 			
             <div class="whole-wrap">
 				<div class="container">
-                    	<h2>Animais Requisitados</h2>
+                    	<h2 style="margin:50px 0 40px 0;text-align:center;">Animais Requisitados</h2>
                     <div class="table-responsive">
                     	<table class="table">
     					<thead>
@@ -86,7 +84,6 @@
 					        	<td><?php echo $info['primeironome'];?></td>
 					        	<td><?php echo $info['email'];?></td>
 					        	<td><?php echo $info['dt_requisicao'];?></td>
-					        	<!--<td><button type="submit" name="submit" class="primary-btn">Adotar</button></td>-->
 					      	</tr>
       					<?php } ?>
     					</tbody>
@@ -114,7 +111,7 @@
 			<!-- End footer Area -->	
 
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-						<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>			
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>

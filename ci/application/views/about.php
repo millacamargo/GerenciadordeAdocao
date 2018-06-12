@@ -2,7 +2,7 @@
 	<html lang="zxx" class="no-js">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="<?= base_url();?>assets/img/logo.png">
 		<meta charset="UTF-8">
 		<title>Adote um animal | Sobre nós</title>
 
@@ -22,16 +22,16 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/index"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
+				        <a href="<?= base_url();?>index.php/inicio/index"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/index">Home</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/sobre">Sobre nós</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/voluntario">Seja um voluntário</a></li>				          
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Incio/contato">Contato</a></li>
-                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register">Registre-se</a></li>
-                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login">Login</a></li>			              
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Inicio/index">Home</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/sobre">Sobre nós</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/voluntario">Seja um voluntário</a></li>				          
+				          <li><a href="<?= base_url();?>index.php/incio/contato">Contato</a></li>
+                          <li><a href="<?= base_url();?>index.php/user/register">Registre-se</a></li>
+                          <li><a href="<?= base_url();?>index.php/user/login">Login</a></li>			              
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -47,7 +47,7 @@
 							<h1 class="text-white">
 								Sobre nós			
 							</h1>	
-							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Inicio/sobre"> Sobre nós</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/inicio/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/inicio/sobre"> Sobre nós</a></p>
 						</div>	
 					</div>
 				</div>
@@ -61,18 +61,16 @@
 				<div class="container-fluid">
 					<div class="row align-items-center">	
 						<div class="col-lg-6 home-about-left no-padding">
-							<img src="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/img/about-img.jpg" alt="">
+							<img src="<?= base_url();?>assets/img/about.jpg" alt="">
 						</div>
 						<div class="col-lg-6 home-about-right no-padding">
 							<h1>
-								Globally Connected
-								by Large Network
+								Fazendo o bem desde 2016
 							</h1>
-							<h5>We are here to listen from you deliver exellence</h5>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-							</p>
-							
+							<p>A Animal Shelter é uma Organização da Sociedade Civil de Interesse Público (OSCIP) fundada em 2016, que tem como MISSÃO transformar a realidade de animais desamparados.</p>
+							<p>DEFENDEMOS que os animais merecem RESPEITO, AMOR, CUIDADO E DIGNIDADE, e repudiamos toda e qualquer forma de violência ou crueldade.</p>
+
+							<p>Para aumentar nossa abrangência, estamos sempre em busca de pessoas e empresas que queiram fazer a diferença no mundo e que simpatizem com a causa animal.</p>
 						</div>
 					</div>
 				</div>	

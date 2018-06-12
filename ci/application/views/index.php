@@ -2,7 +2,7 @@
 	<html lang="zxx" class="no-js">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="<?= base_url();?>assets/img/fav.png">
+		<link rel="shortcut icon" href="<?= base_url();?>assets/img/logo.png">
 		<meta charset="UTF-8">
 		<title>Adote um animal</title>
 
@@ -23,16 +23,16 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
+				        <a href="<?= base_url();?>index.php/inicio/index"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Home</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/sobre">Sobre nós</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/voluntario">Seja um voluntário</a></li>				          
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/contato">Contato</a></li>
-                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register">Registre-se</a></li>
-                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login">Login</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/inicio/index">Home</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/sobre">Sobre nós</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/voluntario">Seja um voluntário</a></li>				          
+				          <li><a href="<?= base_url();?>index.php/inicio/contato">Contato</a></li>
+                          <li><a href="<?= base_url();?>index.php/user/register">Registre-se</a></li>
+                          <li><a href="<?= base_url();?>index.php/user/login">Login</a></li>
 				        </ul>
 				      </nav><!-- Fim menu -->		    		
 			    	</div>
@@ -46,14 +46,13 @@
 					<div class="row fullscreen d-flex align-items-center justify-content-start">
 						<div class="banner-content col-lg-8 col-md-12">
 							<h1 class="text-uppercase">
-								Adote-nos <br>
-								Precisamos da sua ajuda!		
+								Adote um pet, <br>
+								Eles precisam da sua ajuda!		
 							</h1>
 							<p class="text-white sub-head">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp
-								or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+								Faça o bem, ajude algum bichinho a fazer parte de uma família
 							</p>
-							<a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login" class="primary-btn header-btn text-uppercase">Encontre um pet para adoção</a>
+							<a href="<?= base_url();?>index.php/user/login" class="primary-btn header-btn text-uppercase">Encontre um pet para adoção</a>
 						</div>											
 					</div>
 				</div>
@@ -72,7 +71,7 @@
 						</div>
 					</div>					
 					<div class="row">
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-4 col-md-8">
 							<div class="single-process">
 								<span class="lnr lnr-thumbs-up"></span>
 								<a href="#">
@@ -81,24 +80,11 @@
 									</h4>
 								</a>
 								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+									Escolha seu pet, temos um que com certeza irá adorar o seu carinho!
 								</p>
 							</div>
 						</div>
-                        <div class="col-lg-3 col-md-6">
-							<div class="single-process">
-								<span class="lnr lnr-license"></span>
-								<a href="#">
-									<h4>
-										Preenchimento do formulário de adoção
-									</h4>
-								</a>
-								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-4 col-md-8">
 							<div class="single-process">
 								<span class="lnr lnr-user"></span>
 								<a href="#">
@@ -107,11 +93,11 @@
 									</h4>
 								</a>
 								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+									Em 48 horas entraremos em contato com você para marcarmos uma reunião.
 								</p>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6">
+						<div class="col-lg-4 col-md-8">
 							<div class="single-process">
 								<span class="lnr lnr-magic-wand"></span>
 								<a href="#">
@@ -120,7 +106,7 @@
 									</h4>
 								</a>
 								<p>
-									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.
+									Depois de todos os trâmites, é chegada a hora do pet ganhar um novo lar!
 								</p>
 							</div>
 						</div>																		
@@ -135,12 +121,9 @@
 					<div class="overlay overlay-bg"></div>						
 					<div class="row align-items-center justify-content-center">
 						<h1 class="text-white">Quer ajudar? Torne-se um voluntário</h1>
-						<p class="text-white">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-						</p>
+						<p class="text-white">Fazer o bem é um dos privilégios que a vida nos dá a chance. A troca e a sensação de fazer algo para mudar o mundo é recompensadora. Temos espaços para todas as áreas! Você pode participar dos bazares, ajudar com tratamento veterinário e até com a parte audiovisual. Clique em Registrar-se e preencha o formulário e aguarde nosso contato! Temos certeza que você vai poder nos ajudar em algo!</p>
 						<div class="buttons d-flex flex-row">
-							<a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/volunteer" class="primary-btn text-uppercase">Registre-se agora</a>
+							<a href="<?= base_url();?>index.php/inicio/volunteer" class="primary-btn text-uppercase">Registre-se agora</a>
 						</div>
 					</div>
 				</div>	

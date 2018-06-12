@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
-		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
 		<link rel="shortcut icon" href="<?= base_url();?>assets/img/logo.png">
-		<!-- Author Meta -->
-		<meta name="author" content="codepixer">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
 		<meta charset="UTF-8">
-		<!-- Site Title -->
 		<title>Adote um animal | Registro de animais</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
+			<!--CSS-->
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/linearicons.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/font-awesome.min.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.css">
@@ -28,19 +16,19 @@
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/animate.min.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/owl.carousel.css">
 			<link rel="stylesheet" href="<?= base_url();?>assets/css/main.css">
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	
 		</head>
 		<body>
 			  <header id="header" id="home">
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets"><img src="<?= base_url();?>assets/img/logo.png" alt="Logo do Abrigo" title="" /></a>
+				        <a href="<?= base_url();?>index.php/Animal_Info/showPets"><img src="<?= base_url();?>assets/img/logo.png" alt="Logo do Abrigo" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home</a></li>
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Info/showPets">Home</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
 				          <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a), <?= $this->session->userdata("primeironome")?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
@@ -60,7 +48,7 @@
 							<h1 class="text-white">
 								Registro de animais	
 							</h1>	
-							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Register_Animal/showRegister">Registro de animais</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/Animal_Info/showPets">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Register_Animal/showRegister">Registro de animais</a></p>
 						</div>	
 					</div>
 				</div>
@@ -99,6 +87,8 @@
 			</footer>
 			<!-- End footer Area -->	
 			
+			<!--JS-->
+			<script src="<?= base_url();?>assets/js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 			<script src="<?= base_url();?>assets/js/vendor/bootstrap.min.js"></script>	
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>

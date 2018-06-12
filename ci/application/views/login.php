@@ -2,9 +2,9 @@
 	<html lang="zxx" class="no-js">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="<?= base_url();?>assets/img/fav.png">
+		<link rel="shortcut icon" href="<?= base_url();?>assets/img/logo.png">
 		<meta charset="UTF-8">
-		<title>Animal Shelter | Login</title>
+		<title>Adote um animal | Login</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--CSS -->
@@ -24,17 +24,17 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
+				        <a href="<?= base_url();?>index.php/inicio/index"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <!--Inicio do menu-->
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Home</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/about">Sobre nós</a></li>
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/volunteer">Seja um voluntário</a></li>				          
-				          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/contact">Contato</a></li>
-                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/register">Registre-se</a></li>
-                          <li><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/user/login">Login</a></li>				              
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/inicio/index">Home</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/sobre">Sobre nós</a></li>
+				          <li><a href="<?= base_url();?>index.php/inicio/voluntario">Seja um voluntário</a></li>				          
+				          <li><a href="<?= base_url();?>index.php/inicio/contato">Contato</a></li>
+                          <li><a href="<?= base_url();?>index.php/user/register">Registre-se</a></li>
+                          <li><a href="<?= base_url();?>index.php/user/login">Login</a></li>				              
 				        </ul>
 				      </nav><!-- Fim do menu -->		    		
 			    	</div>
@@ -50,7 +50,7 @@
 							<h1 class="text-white">
 								Login	
 							</h1>	
-							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/inicio/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/usuario/login">Login</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/inicio/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/user/login">Login</a></p>
 						</div>	
 					</div>
 				</div>
@@ -71,7 +71,7 @@
 						   		<input name="password" type="password" class="form-control" placeholder="Digite sua senha">
 						  	</div>
 						  </div>
-						  <input type="submit" value="Entrar" class="primary-btn btnlogin" style="200px"/>
+						  <input type="submit" value="Entrar" class="primary-btn btnlogin" style="200px;margin-left:150px;"/>
 				    </form>
                 </div>
 			</section>

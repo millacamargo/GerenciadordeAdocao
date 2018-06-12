@@ -28,12 +28,12 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
+				        <a href="<?= base_url();?>index.php/Animal_Info/showPets"><img src="<?= base_url();?>assets/img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home</a></li>
-	              		  <li class="menu-active"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
+				          <li class="menu-active"><a href="<?= base_url();?>index.php/Animal_Info/showPets">Home</a></li>
+	              		  <li class="menu-active"><a href="<?= base_url();?>index.php/Required_Animals/showRequired">Animais Requisitados</a></li>
 	              		  <li style="color:white;font-weight:bold;font-size:14px;">Bem vindo(a),  <?= $primeironome ?></li>
 				          <li> <form method="POST" action="/ci/index.php/user/logout">
                                 <input type="submit" class="genric-btn primary small" value="Logout"/>
@@ -53,7 +53,7 @@
 							<h1 class="text-white">
 								Animais Registrados
 							</h1>	
-							<p class="text-white link-nav"><a href="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Animal_Info/showPets">Animais Registrados</a></p>
+							<p class="text-white link-nav"><a href="<?= base_url();?>index.php/Animal_Info/showPets">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="<?= base_url();?>index.php/Animal_Info/showPets">Animais Registrados</a></p>
 						</div>	
 					</div>
 				</div>
@@ -62,10 +62,10 @@
 			
             <div class="whole-wrap">
 				<div class="container">
-                    	<h2>Animais em Adoção</h2>
-                    	<button type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">+ Novo Animal</button>
+                    	<h2 style="text-align:center;margin:60px 0 30px 0;">Animais em Adoção</h2>
+                    	<button style="margin:10px 0 0 0;float:right;" type="button" onclick="window.location.href='https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Register_Animal/showRegister';" class="primary-btn">+ Novo Animal</button>
                     	<form method="POST" action="https://gerenciadordeadocao-lfvasconcellos.c9users.io/ci/index.php/Animal_Info/showPets">
-                    <button type="submit" name="delete" value="delete" class="primary-btn" onclick="return confirm('Deseja realmente excluir o animal?');">Remover</button>
+                    <button style="margin:10px;float:right;" type="submit" name="delete" value="delete" class="primary-btn" onclick="return confirm('Deseja realmente excluir o animal?');">Remover</button>
   					<table class="table">
     					<thead>
      						 <tr>
@@ -82,8 +82,8 @@
     					<tbody>
     					<?php foreach ($results as $animal){ ?>
 					     	<tr>
-					     		<td><input type="checkbox" name="animal_id[]" value="<?php echo $animal['id']?>"/></td>
-					        	<td name="nome"><?php echo $animal['nome']; ?></td>
+					     		<td><input type="checkbox" class="form-check-label" name="animal_id[]" value="<?php echo $animal['id']?>"/></td>
+					        	<td><?php echo $animal['nome']; ?></td>
 					        	<td><?php echo $animal['especie'];?></td>
 					        	<td><?php echo $animal['raca'];?></td>
 					        	<td><?php echo $animal['cor'];?></td>
