@@ -50,7 +50,7 @@
 								Eles precisam da sua ajuda!		
 							</h1>
 							<p class="text-white sub-head">
-								Faça o bem, ajude algum bichinho a fazer parte de uma família
+								Faça o bem e ajude algum bichinho a fazer parte de uma família.
 							</p>
 							<a href="<?= base_url();?>index.php/user/login" class="primary-btn header-btn text-uppercase">Encontre um pet para adoção</a>
 						</div>											
